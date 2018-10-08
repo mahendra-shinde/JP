@@ -1,0 +1,36 @@
+Q1: To calculate the simple interest
+A:
+
+BEGIN
+	DECLARE interest, principal, noofyrs, rate as float
+	GET principal amount and store in principal
+	GET no of yrs and store in noofyrs
+	Get rate in percentage and store in rate
+	
+	set interest = principal * noofyr * rate / 100
+	Display "Interest Amount is " + interest
+END
+	
+Q2: Check if the given 3 digit no is palindrome.
+A:
+
+BEGIN
+	DECLARE a, original, remainder, reverse as integers
+	GET number from user and store in a
+	Set original =a
+	set reverse = 0
+	
+	while (a != 0) do
+	remainder = a mod 10
+	reverse = reverse*10 + remainder
+	a=a/10
+	end while
+	
+	if (original == reverse) then
+	print "yay! palindrome"
+	
+	Else
+	print "nah! not palindrome"
+	END IF
+END
+	
