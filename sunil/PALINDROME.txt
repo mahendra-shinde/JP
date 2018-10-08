@@ -1,0 +1,62 @@
+BEGIN
+	DECLARE Num, PALNUM, numMod as Numeric
+	GET num and store 
+	if( Num LENGTH < 1)	
+
+		START
+			repeat
+				numMod = num MOD 100
+				num = num divide 100 
+				PALNUM = PALNUM CONCAT numMOD
+			until (num Lenght > 1)
+		END
+
+		IF(PALNUM == Num) THEN
+			DISPLAY "GIVEN NUMBER IS PALINDROME"
+		ELSE
+			DISPLAY "GIVEN NUMBER IS NOT PALINDROME"
+		END IF
+	ELSE
+		DISPLAY "SINGLE DIGIT NUMBER"
+	End IF
+		
+END
+
+
+
+
+
+
+
+
+
+BEGIN
+	DECLARE temp, tempPALIN as CHARACTER
+	GET  temp, tempPALIN  and store them
+	
+	IF temp NOT EMPTY  THEN
+				
+			GET Length of temp, and STORE in PLength
+			START
+				
+				repeat
+
+					chartemp = GET CHAR AT LOCATION equal to plength
+					tempPALIN = tempPALIN concat chartemp
+					PLength = PLength -1
+		
+				until(PLength > 1)
+				if(tempPALIN  is equal to temp) THEN
+					Display "given character is PALINDROME"
+				ELSE
+					Display "given character is NOT PALINDROME"
+				END IF
+
+			END
+			
+		
+	ELSE
+		Display "INPUT FIELDS CANNOT BE EMPTY "
+	END IF 
+	
+END
