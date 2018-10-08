@@ -1,0 +1,8 @@
+count = 1
+
+while count< 100 do
+	if count = 15 then
+		continue;
+	print "Welcome"
+	count ++
+end while
