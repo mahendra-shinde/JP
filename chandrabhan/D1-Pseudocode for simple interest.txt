@@ -1,0 +1,8 @@
+BEGIN
+  DECLARE interest, principle, rate, duration as number
+  GET principle, rate, duration AND STORE THEM
+  
+  calculate interest = principle * rate * duration / 100
+  display interest
+
+END

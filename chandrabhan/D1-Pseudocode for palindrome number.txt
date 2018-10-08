@@ -1,0 +1,10 @@
+BEGIN
+  DECLARE givennum as number
+  GET givennum STORE THEM
+  
+	IF digit at unit place == digit at hundred place
+		display givennum is palindrome number
+	Else
+		display givennum is NOT palindrome number
+
+END
