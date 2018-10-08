@@ -1,0 +1,11 @@
+BEGIN
+	GET the 3 digit number and STORE as N1
+	Reverse the 3 digit number and STORE as N2
+	If N1= N2
+	Then 
+		Display Number is a Palindrome
+	Else 
+		Display Number is not a Palindrome
+	EndIF
+	
+END
