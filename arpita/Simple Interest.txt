@@ -1,0 +1,17 @@
+BEGIN
+
+DECLARE 
+	Principal_Amt AS  Numeric
+	Rate AS Numeric
+	Period As Numeric
+	SI As Numeric
+
+PROMPT & GET Principal and STORE in Principal_Amt 
+PROMPT & GET Rate of Interest and STORE in Rate
+PROMPT & GET Period (in years) and STORE in Period
+
+LET SI = Principal_Amt  x (Rate/100) x Period
+
+DISPLAY "Simple Interest = " SI 
+
+END
