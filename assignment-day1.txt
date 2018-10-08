@@ -1,0 +1,4 @@
+Write a pseudo code for:
+	
+	1.  Calculate Simple Interest from principle, rate & duration
+	2.  Check if given THREE digit number if palindrome number		
