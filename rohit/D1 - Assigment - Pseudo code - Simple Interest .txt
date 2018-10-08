@@ -1,0 +1,7 @@
+BEGIN
+	Declare Principal, Rate of Interest, No of years, Simple Interest as Integers
+	GET Principal, Rate of Interest, No of years AND STORE THEM
+	Calculate Simple Interest = (Principal * Rate of Int * No of Yrs)/100
+	DISPLAY Simple Interest
+
+END
