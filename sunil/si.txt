@@ -1,0 +1,33 @@
+BEGIN
+	DECLARE SI,Principle, Rate, Duration as Numeric
+	GET Principle, Rate and Duration and store them
+	
+	IF Principle NOT EMPTY AND PRINCIPAL NOTEQUALTO Zero
+		 AND Rate NOT EMPTY AND RATE NOTEQUALTO Zero
+		AND Duration NOT EMPTY AND Duration NOTEQUALTO Zero THEN
+		
+		IF RATE IS NUMERIC AND DURTION IS NUMERIC THEN
+
+
+			GET Length of Principle and STORE in PLength
+			counter = 1
+			WHILE(counter < PLength)
+				char = GET CHARACTER FROM PRINCIPLE AT POSITION EQUAL TO COUNTER
+				
+				IF(CHAR IS NUMERIC OR CHAR IS EQUAL TO ".")
+					STORE CHAR IN PRIN							 		
+				END IF
+				COUNTER = COUNTER +1
+			END WHILE
+
+			SI = (PRIN * RATE * DURATON)/(100 *12)
+			DISPLAY "SIMPLE INTERESET FOR PRINCIPLE " PRINCIPLE "@ rate" RATE "for duration" Duration "is " SI
+		ELSE
+			DISPLAY "PLEASE ENTER RATE AND DURATION FIELDS AS NUMERIC"
+		END IF
+
+	ELSE
+		Display "INPUT FIELDS CANNOT BE EMPTY OR ZERO"
+	END IF 
+	
+END
