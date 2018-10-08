@@ -1,0 +1,19 @@
+BEGIN
+
+DECLARE 
+	Num1, First_digit, Second_digit, Last_digit, Concatenate_num as INTEGER
+
+PROMPT and GET three digit number and STORE in Num1
+
+First_digit = LEFT (Num1, 1)
+Second_digit = MID(Num1, 2, 1)
+Last_digit = RIGHT(Num1, 1)
+
+Concatenate_num = CONCATINATE (Last_digit, Second_digit, First_digit)
+
+IF Concatenate_num = Num1
+THEN DISPLAY "Digit is Palindrome"
+ELSE DISPLAY "Digit is not Palindrome"
+END-IF
+
+END
