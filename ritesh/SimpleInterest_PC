@@ -1,0 +1,39 @@
+BEGIN
+	DECLARE principle, rate, no_of_years, simple_interest as NUMBER
+	DECLARE input_valid as BOOLEAN
+
+	SET input_valid is true
+
+	GET principle from user and STORE in principle
+	GET rate from user and STORE in rate
+	GET years from user and STORE in no_of_years
+
+
+	IF principle is empty or rate is empty or no_of_years is empty then
+		Display "Principle, rate or Years cannot be blank"
+		SET input_valid is false
+
+	END IF
+
+
+	IF principle is less than 0 then
+		Display "Principle amount should be greater than 0"
+		SET input_valid as false
+	END IF
+	
+	IF rate is less than 0 or rate is greater than 100 then
+		Display " Rate should be between 0% and 100%" 
+		SET input_valid as false
+	END IF
+
+	IF no_of_years is less than 0 then
+		Display "Years should be greater than 0"
+		SET input_valid as false
+	END IF
+
+
+	IF input_valid is true		
+		SET simple_interest as (principle multiply by rate multiply by no_of_years) divided by 100
+		Display "Simple interest is " + simple_interest 
+	END IF
+END
