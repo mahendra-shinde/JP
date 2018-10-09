@@ -1,0 +1,16 @@
+START
+	DECLARE interest, principle, rate and time
+	ConvertNumber = false
+	Do
+		Get amount as characters
+		if convert amount as number is true
+		then
+			principle = amount
+			convertnumber = true
+		end if
+	while convertnumber is false
+	rate = get rate of interest as number
+	time = get time period in months
+	interest = (principle * rate * time)/(12 * 100)
+	display interest
+END
