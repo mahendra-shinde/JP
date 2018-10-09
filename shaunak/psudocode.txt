@@ -1,0 +1,41 @@
+Authenticate user and absed on role of user display appropriate welcome page
+  Types of Users: Normal User, Admin User
+
+Begin
+
+	READ User Name & Password
+		
+	ASSIGN/STORE usr = User Name
+	ASSIGN/STORE pwd = Password
+
+Validate user has entered the correct usr & pwd format and it's not blank and it's not more then 8 charcters and it doesn't contrain spaces and spacial characters
+
+	If usr & pwd is blank or it's more then 8 charcters or it contrain spaces or spacial characters
+
+		Display message "User Name or password is not not in correct format"
+	
+	Else Validate If The credentials are correct 
+
+		If usr & pwd are Not cortrect		
+	
+			Diplay "Invalid User Name or Password"
+			
+		Else 
+			Find the Role for the user from Database
+			
+				If Role is Normal user then 
+				
+					Take user to Normal user Dash board and Display welcome message
+
+				Else if Role is Admin
+			
+					Take user to Admin user Dash board and Display welcome message		
+				
+				Else  
+					
+					Display "User Role is not Defined, Contact your Admin"
+				End IF		
+
+	End IF
+
+End		
