@@ -1,0 +1,37 @@
+BEGIN
+	DECLARE input_number, i, n AS NUMBER
+	DECLARE input_string as CHARACTERS	
+	DECLARE is_Palindrome as BOOLEAN
+	
+	GET input_number AND STORE THEM
+	
+
+	IF input_number is empty then
+		Display "Input Number cannot be blank"
+	END IF
+
+	IF input_number is less than 0 then 
+		Display "Input Number should be greater than 0"
+	END IF
+
+	IF length of input_number is equal to 1 then
+		Display "Number is Palindrome"
+	END IF
+	 	
+	STORE input_number into input_string 
+
+	SET is_Palindrome as true 
+	SET n as length of input_string
+	FOR i = 1 to n by  1 do
+		IF ith character in input_string is NOT EQUAL TO (n + 1-i)th character in input_string then
+			SET is_Palindrome as false
+			break		
+		END IF 
+	END FOR
+	IF is_Palindrome is true then
+		DISPLAY "Number is Palindrome"
+	ELSE
+		DISPLAY "Number is not a Palindrome"
+	END IF
+
+END
