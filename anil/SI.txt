@@ -1,0 +1,9 @@
+Begin
+
+Enter PA // Principal Amount
+Enter ROI //Rate of Interest
+Enter D //Duration
+
+Calculate SI = PA*ROI*D/100
+
+End
