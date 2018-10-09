@@ -2,7 +2,7 @@ Begin
 Declare Principle,Rate,Simple_Interest as float
 Declare time as integer
 Input Principle , Rate , Time
-Simple_Interest = (Principle*Rate*Time)/100
+Simple_Interest = (Principle*Rate*Time)/100.0
 Print Simple_Interest
 End
 
