@@ -1,0 +1,27 @@
+BEGIN
+  DECLARE username, password as characters
+  GET username & password AND STORE THEM
+  IF username NOT empty AND
+	password NOT empty THEN
+	IF username exists in database then
+		GET password from database AND store pass_from_db
+		IF password == pass_from_db THEN
+			GET userrole from db and store it
+			if userrole is admin then
+				display "Admin Home page "
+			else if userrole is normal then
+				display "User home page"
+			else
+				display "invalid User role"
+				
+		ELSE
+			display "Invalid password"			
+		END IF		
+	ELSE
+		display "User not found!"
+  	END IF		
+   ELSE 
+	display "Username / Password cannot be blank"	
+	
+   END IF
+END

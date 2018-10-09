@@ -1,0 +1,15 @@
+CAlculate the Simple Interest from Principal, rate and Duration
+
+Begin
+		Declare P,R,T,SI as numeric
+		Prompt " Enter the Principal Amount"
+		
+		Store in P
+		Prompt " Enter the Rate"
+		Store in R
+		Prompt " Enter the Time"
+		Store in T
+		CAlculate SI=(P*R*T)/100
+		Store in SI
+		Display "Simple Interest" SI
+End

@@ -1,0 +1,24 @@
+Check if the 3 digit number is a pallindrome.
+
+Begin
+	Declare x,  t, reverse
+	Prompt "Enter 3 digit number"
+	Store in X
+	Store x in t
+	Store 0 in reverse
+	
+		while (t!=0)
+			Calculate reverse = reverse*10
+			Calculate reverse=reverse + t%10
+			Calculate t/10 and Store in t
+		end While
+		
+		If (x==reverse)
+			Display x is a pallindrome
+		else
+			Display x is not a pallindrome
+			
+		endif
+		
+End
+	
