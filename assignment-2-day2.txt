@@ -1,0 +1,8 @@
+1.	List all department names in descending
+	SELECT dname from dept order by dname DESC.
+2.	list all department names that begins with "S"
+	SELECT dname from dept where dname like "S%"
+3.	list all departments from "chicago"
+	SELECT dname from dept where loc = 'CHICAGO'
+4.	list all departments where name DOESNOT end with "S"
+	SELECT dname from dept where DNAME NOT like '%S'
