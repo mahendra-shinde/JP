@@ -1,9 +1,12 @@
 Begin
 Declare n, a,reverse as integer
 read n
+While (n!=0)
+{
 a = n mod 10
 reverse = (reverse*10)+a
 n = n/10
+}
 if reverse = n
  print number is palindrome
 else 
