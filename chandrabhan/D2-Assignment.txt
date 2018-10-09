@@ -1,0 +1,4 @@
+select dname from dept order by dname desc
+select dname from dept where dname like 'S%'
+select dname from dept where loc='CHICAGO'
+select dname from dept where dname not like '%S'
