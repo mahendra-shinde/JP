@@ -1,0 +1,23 @@
+select count(*) from emp;
+select * from user_tables;
+select * from user_constraints;
+select * from user_indexes;
+select * from user_sequences;
+
+
+select * from emp;
+select ENAME from emp;
+select * from emp WHERE SAL>4000;
+select ENAME from emp WHERE SAL=3000;
+SELECT * FROM TAB;
+SELECT * FROM EMP WHERE ROWNUM<11 ORDER BY sal DESC;
+SELECT DISTINCT JOB FROM EMP;
+SELECT * FROM EMP WHERE SAL IN (3000, 4000);
+SELECT * FROM EMP WHERE SAL BETWEEN '2000' and '4000';
+=
+>
+<
+>=
+<=
+<> or !
+
