@@ -1,0 +1,49 @@
+Start	
+	Input "Username"
+	Input " Password"
+		
+
+		IF 
+			Username = Contains the user in the database
+				 and Password = does not matche with that with the user
+				or Password is not equal to 8 characters and password does not contains one number and a capital or Password is blank
+ 				then
+		Then Display "Username/Password is not valid"
+		End If
+		
+		If 
+			Username = Does not Contain the user in the database
+				 and Password = matches with that with the user
+				Or Password equal to 8 characters and password contains one number and a capital or Password is not blank
+ 				then
+		Then Display "Username/Password is not valid"
+		End If
+
+		If 
+			Username = blank
+				 or Password = blank
+
+ 				then
+		Then Display "Username/Password is not valid"
+		End If
+		
+		If 
+			Username = Contains the user in the database
+				 AND Password is equal to 8 characters and password contains one number and a capital
+				and Password is not blank
+				and Password = matches with that with the user
+ 				then 	
+				If User = Normal User 
+					Display " Welcome User "
+				End IF
+				Else IF User = Admin
+					Display "Welcome Admin User"
+				End IF
+				Else If User = No Role
+					Displaye "Please contact ADmin"
+				End IF
+		Enf If
+
+End
+
+

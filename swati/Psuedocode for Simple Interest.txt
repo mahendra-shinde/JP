@@ -1,0 +1,12 @@
+BEGIN
+	DECLARE Principal, Rate, Interest, Time
+	INPUT Principal
+	INPUT Rate
+	Input Time
+		IF Time is in Years
+		Then Time = Time/12
+		Else Time = Time
+		End If
+	Interest = (Principal*Rate*Time)/12
+	DISPLAY "Interest is " Interest
+End

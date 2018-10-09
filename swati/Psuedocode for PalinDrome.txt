@@ -1,0 +1,15 @@
+## To Find the number is Palindrome or not
+
+START
+	DECLARE Num, REverse = 0. Digit
+	InPut Num in 3 Digits
+		While (Num > 0)
+		Do Digit = (Num MOD 10)
+		Reverse = Reverse*10 + Digit
+		Num = Num/10
+		
+		If Num = Reverse
+		  Then DISPLAY Num "is Palindrome"
+		ELSE DISPLAY Num "is not Palindrome"
+		End IF
+END
