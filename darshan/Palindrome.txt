@@ -1,0 +1,14 @@
+BEGIN 
+
+	DECLARE number, last_digit, first_digit as INTEGER
+	SET number =787
+	int last_digit = number MOD 10
+	int first_digit = number/100
+	
+	IF(fitst_digit == last_digit) THEN
+		"Number is Palindrome"	
+	ELSE
+		"Number is Not Palindrome"
+	ENDIF
+
+STOP

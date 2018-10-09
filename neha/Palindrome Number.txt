@@ -1,0 +1,22 @@
+START
+	DECLARE Input_Number as number
+	Number_length = 0
+	DO
+		Input_number = get number in 3 digits
+		Number_length = length of Input_Number
+	while number_length <> 3
+	DECLARE input_num_as_str, reverse_num_as_str as characters
+	input_num_as_str = covert Input_Number as characters
+	reverse_num_as_str = ''
+	For i - 1 to number_length
+		reverse_num_as_str = reverse_num_as_str + char at i position in input_num_as_str
+	end for
+	declare reverse_number as number
+	reverse_number = convert reverse_num_as_str as number
+	if Input_Number = reverse_number
+	then
+		print "Input Number:" + Input_Number + " is palindrome number"
+	else
+		print "Input Number:" + Input_Number + " is palindrome number"
+	end if
+END

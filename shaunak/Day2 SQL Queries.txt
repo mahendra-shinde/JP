@@ -1,0 +1,50 @@
+Select * from emp;
+
+Select Ename from emp;
+
+Select * from emp where sal > 1000;
+
+Select ENAME,SAL from emp where sal > 4000;
+
+Select ENAME,SAL from emp where rownum < 5 order by sal desc;
+select distinct job from emp;
+
+Select * from emp where empno in (select empno from EMP where rownum < 5)
+Order by sal desc;
+
+Select * from emp where Sal Between '2000' and 4000;
+
+
+
+= --> Equal To
+<> --> Not Equal To (Older Syntax)
+!= --> Not Equal To
+> Greater Then
+< Less Then
+>= Greater Then Equals To
+<= Less Then Equals To
+
+Select * from dept where deptno IN (20,30);
+Select * from dept where deptno =20 or Deptno = 30
+
+Select * from dept where deptno NOT IN (20,30);
+Select * from dept where deptno !=20 And Deptno != 30
+
+In Wild card Character % is for 0 or More character however "_" for 1 character
+
+Select * from emp where ename like 'S%T';
+Select * from emp where ename like '_I%';
+Select ENAME, COMM from emp where COMM is not null;
+Select ename as "Employee Name" from emp;
+
+List all only deparatnames in desc order.
+Select DNAME from dept order by DNAME desc;
+
+List all department names that begins with "S"
+Select DNAME from dept where dname like "S%"
+
+List all only department from Chicago
+Select dname fom dept where loc = 'CHICAGO';
+
+List all the departments where dept name does not ends with "s"
+Select danme from dept where DNAME Not like '%S';
