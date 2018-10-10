@@ -55,3 +55,24 @@ Select employee_id, last_name, job_id, salary from employees
 where Salary < ANY (
 Select salary from employees
 where job_id = 'IT_PROG')
+
+
+Create TABLE Books (
+bookid number (4) primary key,
+title varchar (30) not null,
+author varchar(20) default 'Anonymous'
+);
+
+Drop Table books;
+
+Insert into Books (bookid, title)
+Values (101, 'Head First Java');
+
+Insert into Books (bookid, title)
+Values (102, 'Head First Python');
+
+Select * from books;
+
+Update Books
+Set Author = 'Rohit'
+where bookid = 101;
