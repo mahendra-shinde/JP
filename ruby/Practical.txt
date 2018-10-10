@@ -1,0 +1,98 @@
+ List first_name of employee along with salary, job title, min salary, max salary
+
+Ans -  select first_name, salary, job_title, min_salary, max_salary from employees join jobs using (job_id)
+
+Average - SELECT
+    first_name,
+    salary,
+    job_title,
+    min_salary,
+    max_salary,
+    (min_salary+max_salary) / 2 AS "mean salary"
+FROM
+    employees
+    JOIN jobs USING ( job_id )
+
+
+Query 
+
+ select min(hire_date), Max(hire_date) from employees
+
+
+
+1.List department_id with number of employees
+select department_id, count(1) from employees group by department_id;
+
+2. List manager_id with number of subordinates
+ select manager_id, count(1) from employees group by manager_id
+
+
+List all Employees earning more salary than average salary of "IT" department
+select * from employees where salary > (Select Avg(salary) from employees where department_id = (Select department_id from departments where department_name = 'IT' )
+
+
+AND & ANY
+x > ANY (y,z)
+Means x >y OR x>z
+
+x > ALL (y,z)
+x > y AND x > z
+
+x in (y,z)
+x =  y OR x = Z
+
+select employee_id, last_name, job_id, salary
+    From employees
+    where salary < ANY
+    (Select salary
+    from employees where job_id = 'IT_PROG')  
+
+Union 
+(A,B,C,d)
+Union
+(b,C,X,Y)
+
+Output - (A,B,C,D,x,Y)
+
+(A,B,C,D)
+Union All
+(B,c,X,Y)
+
+Output- (A,B,B,C,C,D,X,Y)
+
+MINUS
+(A,B,C,d)
+Minus
+(b,C,X,Y)
+Output - (A,D)
+
+Union and intersect
+
+    select employee_id from job_history
+    union
+    select employee_id from employees;
+    
+    select employee_id from job_history
+    intersect
+    select employee_id from employees
+
+
+CREATE Table books(
+bookid number(4) primary key,
+title varchar(30) not null,
+author varchar(20) default 'Anonymous' );
+
+DROP table books;
+
+INSERT into BOOKS (bookid, title)
+VALUES (101), 'Head first java');
+
+INSERT into Books (Bookid, title)
+VALUES (102, 'Head first python');
+
+SELECT * from books
+
+UPDATE books
+SET author = 'Ruby'
+where bookid = 101;
+
