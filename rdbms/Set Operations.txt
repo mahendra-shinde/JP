@@ -1,0 +1,23 @@
+(A,B,C,D)
+UNION
+(B,C,X,Y)
+
+(A,B,C,D,X,Y)
+-----------------
+(A,B,C,D)
+UNION ALL
+(B,C,X,Y)
+
+(A,B,B,C,C,D,X,Y)
+----------------
+(A,B,C,D)
+INTERSECT
+(B,C,X,Y)
+
+(B,C)
+------------------
+(A,B,C,D)
+MINUS
+(B,C,X,Y)
+
+(A,D)

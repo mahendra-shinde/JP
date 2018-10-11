@@ -1,0 +1,11 @@
+SELECT MIN(hire_date), MAX(hire_date)
+FROM	  employees;
+
+
+SELECT department_id, MIN(hire_date), MAX(hire_date)
+FROM	  employees
+GROUP BY department_id;
+
+
+1. List department_id with number of employees
+2. List manager_id with number of subordinates

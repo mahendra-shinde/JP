@@ -1,0 +1,19 @@
+ CREATE TABLE books (
+	bookid number(4) primary key,
+	title varchar(30) not null,
+	author varchar(20) default 'Anonymus'
+ );
+
+ DROP table books;
+
+ INSERT into BOOKS (bookid, title)
+ VALUES (101, 'Head first java'); 
+
+ INSERT into BOOKS (bookid, title)
+ VALUES (102, 'Head first python');
+
+ SELECT * from books;
+
+ UPDATE books
+ SET author = 'Mahendra'
+ where bookid = 101;
