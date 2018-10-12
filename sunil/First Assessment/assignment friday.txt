@@ -1,0 +1,151 @@
+Q1. 
+BEGIN
+          DECLARE tempNumber as Number
+          DECLARE isPrime as boolean
+          Get tempNumber and store them        
+         START
+                   Counter = 2
+              	   isPrime = true;	                  
+                   WHILE(tempNumber > counter) do
+
+                            If(tempNumber MOD counter == 0) Then
+				isPrime = false;
+                                 break;
+                             END IF
+			    counter = counter +1
+                  END WHILE
+	END
+        if(IsPrime == true  ) Then
+		Display "NUMBER IS PRIME"
+        ELSE
+		Display "NUMBER IS NOT PRIME"
+	END IF 
+
+END
+
+Q2. here i have written 2 logics
+
+BEGIN
+         DECLARE debitAccount, creditAccount, amount,newCreditBalance, newDebitBalance   as Number
+         Get debitAccount, creditAccount, amount and store them        
+        
+	if(CheckAccountEXISTS(debitaccount) ) THEN
+		if(amount < checkAccountBalance(debitAccount)) Then
+
+			newDebitBalance   = checkAccountBalance(debitAccount) - amount
+
+			Display "Amount " amount " debit from account", debitAccount ," for fund transfer. Net Balance is ", newDebitBalance   
+			
+ 			if(CheckAccountEXISTS(creditAccount)) THEN
+
+				newCreditBalance = checkAccountBalance(creditAccount) + amount
+
+				Display "Amount " amount " credited to account", creditAccount ," NET BALANCE IS ", newCreditBalance 			
+			
+			ELSE
+			
+				DISPLAY "INVALID CREDIT ACCOUNT NUMBER "
+				newDebitBalance   = checkAccountBalance(debitAccount) + amount
+
+				Display "Amount reversed back to account", debitAccount , " as credit account is invalid. Net Balance is ",newDebitBalance   
+				
+			END IF
+		ELSE
+			DISPLAY "INSUFFIECIENT BALANCE."	
+		THEN
+	ELSE
+		DISPLAY "INVALID DEBIT ACCOUNT NUMBER "
+	END IF 
+
+END
+
+
+
+
+
+BEGIN
+         DECLARE debitAccount, creditAccount, amount,newCreditBalance, newDebitBalance   as Number
+         Get debitAccount, creditAccount, amount and store them        
+        
+	if(CheckAccountEXISTS(debitaccount) ) THEN
+
+ 		if(CheckAccountEXISTS(creditAccount)) THEN
+
+			if(amount < checkAccountBalance(debitAccount)) Then
+
+				newDebitBalance   = checkAccountBalance(debitAccount) - amount
+
+				newCreditBalance = checkAccountBalance(creditAccount) + amount
+
+				Display "FUNDS TRANSFERRED SUCCESSFULLY from Account", debitAccount ," to credit Account", creditAccount, "amount transferred is ", amount, "Balance in Account is"
+			
+			ELSE
+				DISPLAY "INSUFFIECIENT BALANCE."	
+			THEN
+		ELSE
+			DISPLAY "INVALID CREDIT ACCOUNT NUMBER "
+		END IF
+	ELSE
+		DISPLAY "INVALID DEBIT ACCOUNT NUMBER "
+	END IF 
+
+END
+
+
+Q3.
+
+
+CREATE TABLE CUSTOMER (
+    CustomerId varchar(5), 
+    Fullname varchar(30) ,
+    address varchar (50),
+    city varchar (20) , 
+    PAN_Number varchar(9)
+)
+
+
+
+CREATE TABLE ACCOUNT (
+    AccountNo varchar(8), 
+    AccType varchar(10) ,
+    Balance NUMBER (15,2),
+    customerId NUMBER(5)  
+    
+)
+
+
+INSERT into CUSTOMER (CustomerId,Fullname,address,city,PAN_Number) values('C1005','Ajay Deol', 'Bandra', 'Mumbai','AUIO 7676 K')
+
+INSERT into ACCOUNT (AccountNo,AccType,Balance,customerId) values('SB166778','Current', '16000', 'C1008')
+
+
+q3. SELECT * from CUSTOMER left join account using(CUSTOMERID)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
