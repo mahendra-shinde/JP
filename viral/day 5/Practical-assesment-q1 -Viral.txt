@@ -1,0 +1,18 @@
+Q1 :  Write a Pseudo code for verify if number entered is prime number.
+
+Begin
+	declare Num, PFactor as Integer
+	Prompt "Enter the number you want to test for Prime:"
+	Store in Num
+	set PFactor = 2
+	while (PFactor <= square root of (Num)) and (Num not divisible by PFactor)
+	begin block
+		set PFactor = PFactor + 1
+	end block
+	if (PFactor <= square root of (Num))
+	then 
+		display Num is not prime
+	else
+		display Num is prime
+	End if
+end
