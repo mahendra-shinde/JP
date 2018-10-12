@@ -1,0 +1,33 @@
+Q2:  Write a Pseudo code for transferring amount from one account to another. [Should validate whether both accounts exists]
+
+Begin
+		Declare Account1, Account2, amount as Integer
+		Prompt "Enter Account1"
+		Store in Account1;
+		--Connect to the Account Database and fetch data for account and balance
+		
+		If (Check if Account1 exists)
+			then
+				Store in Balance_Account1
+				Prompt "Enter Account2"
+				Store in Account2;
+				If (Check if Account2 exists)
+					then
+					Store in Balance_Account2
+					Prompt "Enter Amount to be transferred from Account1 to Account2"
+						Store in Amount;
+							If Balance_Account2 > Amount	
+							then
+								set Balance_Account1=Balance_Account1+Amount;
+								set Balance_Account2=Balance_Account2-Amount;	
+								Prompt "Amount Transferred sucessfully and Transaction Complete"
+							Else
+								Prompt "Account2 has insuffienct balance"
+							End if
+					Else
+						Prompt "Account2 doesnt exit"
+				End if
+			Else			
+						Prompt "Account1 doesnt exit"		
+		End if
+End		
