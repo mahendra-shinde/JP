@@ -1,0 +1,9 @@
+A computer needs to be given instructions in a programming language that it understands. A programming language is an artificial language that can be used to control the behavior of computer.
+
+Machine Language The computer’s own binary-based language, or machine language, is difficult for human beings to use. The programmer is required to input every command and all data in binary form.Machine-language programming is such a tedious, timeconsuming task that the time saved in running the program rarely justifies the days or weeks needed to write the program.Machine languages are the most primitive types of the computer language.
+
+High Level Languages: The high level languages use the English words such as OPEN, LIST, PRINT, which might stand for an array of instructions.
+
+
+Later in the 1950s, assembly language programming, which had evolved to include the use of macro instructions, was followed by the development of “third generation” programming languages (3GL), such as FORTRAN, LISP, and COBOL.
+
