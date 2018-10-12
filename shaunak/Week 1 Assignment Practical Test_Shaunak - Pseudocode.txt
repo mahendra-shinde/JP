@@ -1,0 +1,78 @@
+Q1 :  Write a Pseudo code for verify if number entered is prime number.
+Ans:
+
+Begin
+
+	Declare Num1 as Number
+	Declare CHK as Number
+	
+	
+	Display "Please enter a Valid Number > 0 and without Decimal"
+	READ Num1 and STORE
+		
+	If Num1 is blank or it's more then 8 digit or it contrain spaces or spacial characters or Non Integer value
+
+		Display "Please Valid Number"
+	
+	Else 
+		for (CHK = 2; CHk less then Equals to Num1 -1 ; CHK++)
+
+			IF Num1 divide by CHK equals to 0
+				Display "It's not a Prime Number"
+			End IF
+	 
+		If CHK equals to Num1
+		
+			Display "It's a Prime Number"
+		END IF	
+		Break;
+		
+	End IF
+
+End	
+
+
+Q2 : Write a Pseudo code for transferring amount from one account to another. [Should validate whether both accounts exists]
+Ans:
+
+Begin
+
+	Declare ACTS, ACTT, AMT, SBAL, TBAL as Number
+	
+	
+	Display "Please enter Source Acocunt Number"
+	READ ACTS and STORE then
+
+	Display "Please enter Target Acocunt Number"
+	READ ACTT and STORE 
+
+	Display "Please enter Amount to Be Transfered"
+	READ AMT and STORE 
+	
+	Connect to the Database
+	
+	If ACT1 and ACT2 are are Valid account and Active account then 
+
+		Get ACTS Acocunt Balance and store in SBAL
+		GET ACTT Acocunt Balance and store in TBAL
+
+		IF SBAL has Balance greater then AMT then
+				
+			ADD AMT to  TBAL and store in TBAL
+			Minus AMT from SBAL and Store in SBAL
+			update TBAL in ACTT and SBAL in ACTS in Database
+ 
+			Display "Transfer complete"
+			Display "New Balance is" ACTS
+			
+		ELSE 
+			Display "Not enough Balance"
+			 
+		END IF
+	ELSE
+		Diaplay "Please Enter Valid account Number"
+		
+	END IF		
+
+End	
+
