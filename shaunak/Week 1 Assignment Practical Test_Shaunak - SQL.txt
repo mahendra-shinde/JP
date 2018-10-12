@@ -1,0 +1,64 @@
+Q1. Write SQL Query to create following tables Customer and Account
+
+Create Table Customer
+(
+    CustomerId varchar2(10), 
+    Fullname VARCHAR2(40),
+    Address Varchar2(80), 
+    city varchar2(20), 
+    PAN_Number varchar2(20)
+);
+
+Create Table Account
+(
+    accountNo varchar2(20), 
+    accType VARCHAR2(10),
+    balance Number, 
+    customerID varchar2(10)
+);
+
+
+
+
+
+Q2: Write SQL to insert following records in Customer & Account tables:
+
+A:
+-- Customer
+Insert into Customer (CustomerId, Fullname, Address,city,PAN_Number)
+values ('C1002','Rajiv Bhatia','Xyz Path, Chandni chowk','Delhi','AXNSS 1234 A');
+
+Insert into Customer (CustomerId, Fullname, Address,city,PAN_Number)
+values ('C1003','Alia Bhatt','Khar','Mumbai','SZAXS 5656 B');
+
+Insert into Customer (CustomerId, Fullname, Address,city,PAN_Number)
+values ('C1004','Vijay Deol','Bandra','Mumbai','APOI 5675 A');
+
+Insert into Customer (CustomerId, Fullname, Address,city,PAN_Number)
+values ('C1005','Ajay Deol','Bandra','Mumbai','AUIO 7676 K');
+
+-- Account
+Insert into Account (accountNo, accType, balance, customerId)
+values ('SB122666','Savings','67000','C1002');
+
+Insert into Account (accountNo, accType, balance, customerId)
+values ('CB565556','Current','786928.98','C1002');
+
+Insert into Account (accountNo, accType, balance, customerId)
+values ('SB876565','Savings','547899.90','C1004');
+
+Insert into Account (accountNo, accType, balance, customerId)
+values ('SB565722','Savings','67600','C1003');
+
+Insert into Account (accountNo, accType, balance, customerId)
+values ('SB757676','Savings','66197.88','C1003');
+
+Insert into Account (accountNo, accType, balance, customerId)
+values ('SB166778','Current','16000','C1008');
+
+
+Q3: Write a Left Join to get all customers and accounts. Join should display all customers [Even those who DO NOT have any account].
+A: SELECT * FROM customer c LEFT JOIN account a using (customerid);
+
+
+
