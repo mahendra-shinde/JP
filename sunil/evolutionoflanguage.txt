@@ -1,0 +1,19 @@
+A computer needs to be given instructions in a programming language that it understands. A programming language is an artificial language that can be used to control the behavior of computer.
+
+machine language
+
+The computer’s own binary-based language, or machine language, is difficult for human beings to use. The programmer is required to input every command and all data in binary form. Machine-language programming is such a tedious, timeconsuming task that the time saved in running the program rarely just the days or weeks needed to write the program.Machine languages are the most primitive types of the computer language.
+
+Programmers of early 1950s computers, notably UNIVAC I and IBM 701, used machine language programs, that is, the first generation language (1GL).
+
+The 1GL programming was quickly superseded by similarly machine-specific, but mnemonic, second generation languages (2GL) known as assembly languages or “assembler”.
+
+Later in the 1950s, assembly language programming, which had evolved to include the use of macro instructions, was followed by the development of “third generation” programming languages (3GL), such as FORTRAN, LISP, and COBOL.FORTRAN was the first comprehensive high-level programming language that was widely used.
+
+CBASIC (Beginner’s All-purpose Symbolic Instruction Code) was developed in the early 1960s for use by non-professional computer users.
+
+LOGO was developed to introduce children to computers. C, a language Bell Laboratories designed in the 1970s, is widely used in developing systems programs, as is its successor, C++.
+
+Other languages have been developed to permit programming in Internet applications. The most popular is Java, an Object-Oriented programming language introduced in 1995 by Sun Microsystems. Java enables the distribution of both the data and small applications called applets.
+
+These applets could be transmitted over internet. The specialty of java was that it is machine independent and can run on any kind of computer.
