@@ -1,0 +1,49 @@
+<<<<<<<<<<   11.10.2018   >>>>>>>>>>
+
+stored procedures are stored inside schema
+
+
+Procedures which are not stored inside the database are called annonymus or unnamed procedure. e.g below
+
+begin
+	Update locations
+	set city = 'Mumbai'
+	where POSTAL_CODE = '400095';
+end;
+
+
+Creating a Procedure, which can be validated in Procedure section of database
+create procedure update_locations AS
+begin
+	Update locations
+	set city = 'Mumbai'
+	where POSTAL_CODE = '400095';
+end;
+
+CREATE or REPLACE procedure update_locations AS
+begin
+	dbms
+
+
+
+-- Below procedure is used to accept data from user and input this into table
+create or replace PROCEDURE add_job_history
+    ( p_emp_id          job_history.employee_id%type
+    , p_start_date      job_history.start_date%type
+    , p_end_date        job_history.end_date%type
+    , p_job_id          job_history.job_id%type
+    , p_department_id   job_history.p_department_id%type
+    )
+IS
+BEGIN
+    INSERT INTO job_history (employee_id, start_date, end date, job_id, department_id)
+    VALUES (P_EMP_ID, P_START_DATE, P_END_DATE, P_JOB_ID, P_DEPARTMENT_ID);
+END add_job_history;
+
+
+difference between
+drop = delete (drop is to drop schema & delete is to delete data from table)
+alter = update (alter is to alter schema & update is to update data in table)
+create = insert (create is to create new schema & insert is to insert data in table)
+
+

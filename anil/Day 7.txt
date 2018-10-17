@@ -1,0 +1,102 @@
+16.10.2018
+
+What is Heap & Stack
+Learn more about static variables
+search how class variables are stored seperately
+practice next methods from ScannerDemo programm
+
+below line is used in Java to allocate memory (RAM) Xms = minimum mb & Xms = maximum (RAM)
+java -Xms20m -Xms200m
+
+ms		20m		20 MB		Initial RAM assigned
+mx		200m	200 MB		Max Limit RAM
+
+when
+
+you can try the below command in Linux this is a Bomb script which will consume all of your memory and hang your system
+:{:|:}
+
+
+Instance variable gets destroyed when object is destroyed
+
+
+Local Variables 	: Accessible only to parent method (Destroyed when method ends)
+Instance Variables 	: Accessil=ble to entire object/instance
+					  All methids in current object (Created with object [Constructor] destroyed alsong with object)
+Class Variables		: Declared as STATIC
+					  Accessible to ALL objects AND ALL methods in every object
+					  (Created when Calss is Loaded in memory [Just before creating FIRST object])
+					  (Destroyed when Class is Unloaeded from memory [Usually when JVM ends])
+
+Both Instance variables and class vareiables are member of class.
+[Declared INSIDE a class BUT OUTSIDE any method]
+Both Instance variable and class variable can ne assigned Access Modifiers
+
+Static methods are most commonly used for getting or setting values to methods
+
+if a variable is common then it should be tagged as STATIC e.g college name is common among all the students
+
+Switch case is used for equality checks only e.g if value 1 = Square, value 2 = rectangle, value 3 = triangle 
+Switch case will search for true condition and wherever it is met it will print all the values after it finds the true condition
+vs 
+If Else will search for false condition 
+
+
+Declare & Initalize Arrays
+===========================
+
+<DATA-TYPE> <Var-Name>[] = {VAL1, VAL2....VAL-n}
+<DATA-TYPE> <Var-Name>[]; //Uninitialized Array
+String names[];
+int d[];
+int[] data1, data2; //the reason why we can write it like this way is becuase we do not have to repeat "[]" in fornt of all the variables
+
+Initalizing an Array
+String Names[];
+	names = new String[5]; //SIZE of array should be a POSITIVE NUMBER in this case it is "5".
+	e.g array size (0,1,2,3,4)
+	
+
+	FOR loop e.
+	for(A;B;C){
+	D
+	}
+	A->B->D->C->B->D->C
+	
+	A-do{
+	B
+	} while(D;
+	D
+	A->B->
+	
+	PRIMITIVE & WRAPPER CLASSES
+	
+	Wrapper is used where primitive types cannot be used
+	
+	Boxing 		= Putting PRIMITIVE in WRAPPER object (Integer n = new Integer(100)); or Ineger n = Integer.valueOf(100); - this eg.will create a new integer with value 100 and assigne it to N
+	Unboxing	= Extract PRIMITIVE from WRAPPER object - Here the system will firtt check if there is an intege alread creaed and then use the same
+				  int k = n.intValue();	
+	Autoboxing 	= Integer n = 100;
+	AutoUnboxing= int k = n; //Provided n is integer object
+	
+	
+	A & B are variables and C is a reference variables so 2 objects A & B will be created as a result of the below example and C object will not be created since it just referring variable A
+	A=1
+	B=2
+	C=A 
+	
+	Implicit : when source inherits from target
+		
+	
+	Explicit : when target iherits from source
+	Source = (Source) target 
+	
+	Upward & Downard type casting 
+	
+	Difference between Immutable & Final
+	Final cannot be changed
+	Immutable can also not be changed but it will allow us to create a new object and update that new object so original object remains unchanged
+	Primitive datatypes are all immutable
+	
+	String = "Mahendra"
+	String Name = New ("Mahendra")

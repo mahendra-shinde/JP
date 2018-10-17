@@ -1,0 +1,87 @@
+Explore more about Java Native Interface (JNI) - Not a part of this curriculum
+What is Just in TIme complier
+what are constructors
+Learn more about annotations
+
+Static variable are actually class variables
+Static method is like creating a file at a different location with passing score in it and it will only run once
+static {
+	//Some code to get value from FILE!!!
+	passingScore = 35;
+	}
+
+	Collection Interface -  list interface & Queue interface
+	Linked Queue - 
+	
+	study more about constructors
+	
+	constructor chaining means calling constructors from base class to derived class and it also avoids repetition
+	
+	
+	class A{}
+	class B extends A{}
+	class C extends B{}
+	
+	C x = new C()
+	
+	x instanceof A = TRUE
+	x instanceof B = TRUE
+	x instanceof C = TRUE
+	x instanceof Object = TRUE
+	x instanceof Integer = FALSE
+	
+	B x = new B();
+	x instanceof C : FALSE
+	
+	<VAR> instanceof <CLASS>
+	where VAR must be object of "Class" or any of its BASE class
+	
+	Method Overriding
+	methods are in different class e.g one method is in base class and another method is in derived class
+	
+	overriding can be done to your immediate base or base's base class e.g below
+	A
+	B
+	C
+	where C can override B and it can also override A
+	
+	
+	Only CLASS and METHOD can be overloaded or overridden but Variables cannot be overloaded or overridden
+	
+	
+PUBLIC & PRIVATE keywords are used for visibility and not for overriding or overloading
+
+one can mark a method as Private & Final so that it cannot be visible and cannot be overriden or overloaded
+
+Constructors are always final by default and we do not have to mention final.
+
+Abstract - It is not a real class and that no object can be created
+e.g  just account cannot be created we have to create either savings or current account and account is just used for identifying accounts
+
+Concrete class is a class which is neither Final nor Abstract
+
+Abstract methods do not have a body and do not require curly braces just function name and parenthesis e.g anil();
+Abstract classes are generally used for Generalization and grouping classes which has similar features e.g there is no dinosaur in actuallity but the TREX is actually a dinosaur and all other dina=osaur varieties are grouped using the term dinosaur
+
+Interfaces can only support constants and no variables
+class can only implement interface and it cannot extend interface
+Interfaces are also called contracts since it allows both parties e.g team 2 is building the backend part and team 1 is building the frontend part then team 1 will have to create interfaces so that the codee written by team 2 is compatible with the code which team 2 has written
+Interface extends Interface (More than one also)
+Class Implements Interface (Class can implement more than one Interface)
+Interface cannot extend a class
+
+Default method is when you go back in time and make updates to the prequal just like Bahubali movie where they showd the 2nd part 1st and the 1st part later
+
+Variable Declaration
+<Type> <Variable>
+
+Type Could be : 
+	1.	Primitive
+	2. Built in Class
+	3. User Defined Type
+		Class 
+		Interface
+	
+	private Storage
+	
+Constructors do not have a return type and name of class and name of Constructor is the same

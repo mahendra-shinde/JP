@@ -1,0 +1,136 @@
+15.10.2018
+
+Java Portable
+
+JRE is not portable - For windows we need windows JRE & for linux we need linux JRE
+JDK is not portable - For windows we need windows JDK & for linux we need linux JDK
+Application if built on Java ver 1.8 then it can only be run on 1.8 or above version of JRE
+
+Java applets are small applications that run in the browser.
+
+Java cannot be used for system level programming - e,g we cannot create a partition using java. It can be used to build applications
+
+Benefits of Java:
+Portable
+Secure 
+Robuts &
+Object Oriented
+
+JDK = JRE, JVM, Libs
+Dev Tools
+javac
+
+Compiler uses files ".java"
+and translates in .class file which is also known as "ByteCode"
+
+diff between implicit & explicit
+
+Implicit conversion means the complier will do the conversion and we do not have to convert it
+byte
+int 
+short
+long
+float
+double
+boolean
+char
+
+Java's widening conversions are
+- (Take it from PPT)
+-
+-
+-
+-
+-
+-
+
+Explicit coversion means 
+
+
+check how bit operator works
+
+
+Logical Operator
+				AND		OR
+TRUE 	TRUE	TRUE	TRUE
+FALSE	FALSE	FALSE	FALSE
+TRUE	FALSE	FALSE	TRUE
+FALSE	TRUE	TRUE	FALSE
+
+TRUNARY Opertator
+
+(x>0)?y:z
+
+where:
+	x>0 is relational expression
+	y is value for POSITIVE
+	z is value for NEGATIVE
+	
+Example : DA is 15% for managers
+below statement is written using turnary operator 
+da = (desg.contains("manager"))>.15 : .10;
+
+below statement is the same ask as above but is written using IF ELSE statement
+if (desg.contains("manager")){
+	da = .15;
+	} else
+	{
+		da = .10
+	}
+
+psvm + tab
+sout + tab
+
+how java identifies which is a CLASS,VARIABLE,METHOD
+If a name is followed by a {} - curly brackets then it is class
+If a name is followed by a; - semi colon then it is variable
+If a name is followed by a() - round brackets then it is method
+
+when two methods have same name then it is called as method overloading
+function will return a value - Java is not a functional language so there are no functions in java all are called methods
+e.g below
+
+static void drawLine(){
+	for(int i=0;i<100;i++)
+	{
+	System.out.print("-");
+	}
+	}
+	
+2nd program where input is taken and it with the same method name drawLine
+static vodi drawLine(){
+	for(int i=0;i<100;i++)
+	{
+	System.out.print("-");
+	}
+	}
+
+	
+Local Variable - 
+Instance Variable
+
+
+a class can have a field(variables are also called fields in class) and a method. e.g. below
+
+class <class_name>{
+	field;
+	method;
+}
+
+
+Physical properties will become Variables
+And behaviour will become Methods
+
+Every JAVA file can have MAX ON package statement
+
+Package statement MUST Be FIRST "non-comment" statement in JAVA file
+
+syntax:
+
+package base.child.grandchild;
+
+package com;
+package com.mahendra;
+package com.mahendra.project1;
+
+always declare variables as private and methods as public

@@ -1,0 +1,3 @@
+UML = Unified Modelling Language
+
+Abstraction - Is when only limited information is provided, minute details are not provided e.g Projector
