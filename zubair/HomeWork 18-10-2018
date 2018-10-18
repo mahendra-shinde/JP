@@ -1,0 +1,52 @@
+package com.zak.app;
+
+public abstract class Accounts {
+    private String acctNo, custName;
+    private int balance;
+
+    public void Accounts(String acctNo, String custName, int balance){
+        this.acctNo=acctNo;
+        this.custName=custName;
+        this.balance=balance;
+    }
+
+    public void deposit(){
+        System.out.println("Dear "+this.custName+" Amount is being DEPOSITED to your Account....");
+    }
+
+    public void withdraw(){
+        System.out.println("Dear "+custName+" Amount is being WITHDRAWN from your Account....");
+    }
+}
+
+
+class Savings extends Accounts{
+
+    Savings(String ACC,String CUST, int BAL) {
+        super();
+        }
+}
+
+
+class Current extends Accounts{
+
+
+    Current(String ACC,String CUST, int BAL) {
+        super();
+    }
+}
+
+
+
+class Main {
+    public static void main(String[] args) {
+        Accounts  SavingCustomer = new Savings("SAV123", "ZAK",10000);
+        SavingCustomer.deposit();
+        SavingCustomer.withdraw();
+
+        Accounts  CurrentCustomer = new Current("CUR123", "Mahendra",20000);
+        CurrentCustomer.deposit();
+        CurrentCustomer.withdraw();
+    }
+
+}
