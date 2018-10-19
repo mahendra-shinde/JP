@@ -1,0 +1,2 @@
+1. Wtire Psuedo code to identify the entered number is a prime number
+

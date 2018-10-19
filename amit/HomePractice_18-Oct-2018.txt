@@ -1,0 +1,104 @@
+public abstract class account {
+
+    protected int accountNo;
+    protected String Name;
+    protected long balance;
+
+    abstract void abDeposit(long deposit);
+
+    abstract void abWithdrawl(long with);
+
+
+    account(int accountNo, String Name, long balance){
+
+            this.accountNo = accountNo;
+            this.Name = Name;
+            this.balance = balance;
+
+        System.out.println("abstract class constructor");
+    }
+
+    void deposit(long damount){
+
+        System.out.println("Entered deposit method");
+
+    }
+
+    void withdrawl(long wamount){
+        System.out.println("Entered withdrawl method");
+
+    }
+
+
+}
+
+
+public class SavingAccount extends account {
+
+    SavingAccount(int accountNo, String Name, long balance){
+
+        super(accountNo,Name, balance );
+        System.out.println("Saving account constructor");
+
+        }
+
+        void abDeposit(long sdepositAmount){
+
+            System.out.println("Entered Saving Deposit");
+
+        }
+
+        void abWithdrawl(long swithAmount){
+
+            System.out.println("Entered Saving withdrawal");
+
+        }
+
+
+}
+
+
+public class CurrentAccount extends account {
+
+    CurrentAccount(int accountNo, String Name, long balance){
+
+        super(accountNo, Name, balance);
+        System.out.println("current account constructor");
+
+    }
+
+    void abDeposit(long cdepositAmount){
+
+        System.out.println("Entered Current Deposit");
+
+    }
+
+    void abWithdrawl(long cwithAmount){
+
+        System.out.println("Entered Current withdrawal");
+
+    }
+}
+
+
+public class account_main {
+
+    public static void main(String[] args) {
+
+            Transaction t = new Transaction();
+            account aa = new SavingAccount(2354546, "Amit",5000);
+            account bb = new CurrentAccount(65765754, "Priya",43523);
+
+            t.payBill(4235465,"MSEB", 5464356);
+            t.transfer(554634765,56546546,5462);
+
+            aa.abDeposit(435234);
+            aa.abWithdrawl(54646);
+
+            bb.abDeposit(345);
+            bb.abWithdrawl(546);
+
+
+    }
+
+}
