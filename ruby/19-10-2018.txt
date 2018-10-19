@@ -1,0 +1,48 @@
+Three user defined exceptions
+
+InvalidPrincipalException -> Exception
+
+InvalidPrincipalException()
+{
+super("Invalid Principal amount
+}
+
+java docs helps generate java documentation
+
+importance of Java H is rquired for C programming.
+
+BIN directory
+
+Securing java resources -  exe's
+name of the exe which helps in debugging - jdb
+
+rt.jar
+
+
+String class and String bufferclass
+
+Pointers are not supported in JAVA
+
+Super class calls method or constructor of the parent class
+
+Can default values are accessible derived class
+
+static significance  -  
+static block - use
+
+sequence of inheritance - 
+important to call base class constructor before derived class
+
+Significance of object class
+
+Scanner class is a part of util package
+
+
+Self Exploration : "static import"
+Implement Comparator for Student
+1. For Comparing "age" of students
+2. For Comparing "lastName" of students
+
+
+
+
