@@ -1,6 +1,7 @@
 package com.mahendra;
 
-public class Student implements  Comparable {
+//Allow Comparing Student with Student only
+public class Student implements  Comparable<Student> {
     private int rollNo;
     private String firstName;
     private String lastName;
@@ -17,15 +18,9 @@ public class Student implements  Comparable {
         return rollNo+", Name: "+firstName+" "+lastName+" age: "+age;
     }
 
-    public int compareTo(Object obj){
+    public int compareTo(Student obj){
         System.out.println("Using compareTo");
-        if(!(obj instanceof  Student)){
-            return -1;
-        }
-        else
-        {
-            Student otherStudent = (Student) obj;
-            return this.rollNo  - otherStudent.rollNo;
-        }
+        return this.rollNo  - obj.rollNo;
+
     }
 }
