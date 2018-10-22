@@ -3,9 +3,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+@Author("Mahendra Shinde")
 public class PropertyDemo1 {
 
+    @Author
     public static void main(String[] args) {
+
+
         //System Properties: Read from OS (Env Vars)
         System.out.println(System.getProperty("user.home"));
         System.out.println(System.getProperty("os.name"));
