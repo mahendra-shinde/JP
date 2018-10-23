@@ -1,0 +1,11 @@
+Import these classes in new java project
+Create New Java Class with Main method
+
+	In Main method
+
+	i. Write a code to allow user to enter details of 5 books
+	ii. Add all those 5 books
+	iii. ask user for name of author
+		and search for book by that author
+	iv. Print all those books (Results from iii)
+	v. ask user for individual book id and find and display book.
