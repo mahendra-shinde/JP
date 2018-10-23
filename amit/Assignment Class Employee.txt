@@ -1,0 +1,52 @@
+package com.rohit.com.training.hrms;
+
+public class Employee {
+
+    private Integer EmpId;
+    private String DeptId;
+    private String FirstName;
+    private String LastName;
+    private Float Salary;
+
+    public Integer getEmpId() {
+        return EmpId;
+    }
+
+    public void setEmpId(Integer EmpId) {
+        this.EmpId = EmpId;
+    }
+
+    public String getDeptId() {
+        return DeptId;
+    }
+
+    public void setDeptId(String DeptId) {
+        this.DeptId = DeptId;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String FirstName) {
+        this.FirstName = FirstName;
+
+    }
+     public String getLastName() {
+            return LastName;
+        }
+        
+        public void setLastName (String LastName){
+            this.LastName = LastName;
+
+        }
+
+        public Float getSalary() {
+        return Salary;
+        }
+         public void setSalary(Float Salary) {
+             this.Salary = Salary;
+         }
+}
+    
+
