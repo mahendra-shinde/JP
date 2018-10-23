@@ -1,0 +1,45 @@
+package com.training.hrms;
+
+import java.util.Scanner;
+import java.util.SortedMap;
+
+public class hrms {
+
+    public static void main(String[] args) {
+
+        System.out.println("*******WELCOME TO HRMS SYSTEM*************");
+        System.out.println("SELECT NUMBER TO PEFORM FOLLOWING ACTIONS \n 1. To Add New Employee \n 2. To Search Employee From Employee Name \n " +
+                "3. To Find Employee from ID \n 4. To List All Employees 5. To quit HRMS SYSTEM ");
+        Scanner sc = new Scanner(System.in);
+        while(true){
+        int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("ADD NEW EMPLOYEE IN SYSTEM");
+                    break;
+                case 2:
+                    System.out.println("SEARCHING EMPLOYEE FROM EMPLOYEE NAME");
+                    break;
+                case 3:
+                    System.out.println("SEARCHING EMPLOYEE FROM EMPLOYEE ID");
+                    break;
+                case 4:
+                    System.out.println("Shutting down HRMS system");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Wrong choice entered. Try Agaian");
+                    break;
+            }
+
+
+
+        }
+
+
+
+
+
+    }
+}
