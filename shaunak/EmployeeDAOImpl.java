@@ -37,7 +37,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			File file = new File("C:\\web");
 			File newFile = new File(file, "EmpData.txt");
 			if (newFile.exists()) {
-				System.out.println("File Already Exists");
+				//System.out.println("File Already Exists");
 				FileInputStream reader = new FileInputStream("C:\\web\\EmpData.txt");
 				ObjectInputStream oin = new ObjectInputStream(reader);
 				String line;
@@ -60,6 +60,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				ObjectOutputStream out = new ObjectOutputStream(writer);
 				String line;
 				out.writeObject(employeeList);
+			System.out.println("Records Saved to the File\n");
 
 
 		} catch (IOException ex) {
