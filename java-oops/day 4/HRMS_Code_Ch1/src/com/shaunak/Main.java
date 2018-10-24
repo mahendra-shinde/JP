@@ -16,9 +16,10 @@ public class Main  {
 
 
     public static void main(String[] args) {
+    while (true){
         EmployeeDAOImpl EmpImpl = new EmployeeDAOImpl();
         EmpImpl.readFile();
-        System.out.println("Enter one of the menu options");
+        System.out.println("\nEnter one of the menu options");
         System.out.println("Enter A to add new joinee");
         System.out.println("Enter B to find Employee by id");
         System.out.println("Enter C to find Employee by name");
@@ -51,7 +52,7 @@ public class Main  {
 
                 Employee new_emp = new Employee(EmployeeId, FirstName, LastName, dept, salary);
                 //System.out.println(new_Book.toString());
-                System.out.println("Enter");
+                //System.out.println("Enter");
                 EmpImpl.add(new_emp);
                 EmpImpl.writeFile();
                 //}
@@ -80,12 +81,13 @@ public class Main  {
 
             case "Q":
                 EmpImpl.writeFile(); // Statements
+                System.exit(0);
                 break; // break is optional
 
             // We can have any number of case statements
             // below is default statement, used when none of the cases is true.
             // No break is needed in the default case.
-            default:
+        }
                 // Statements
         }
 
