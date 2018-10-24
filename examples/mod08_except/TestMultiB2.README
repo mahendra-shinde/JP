@@ -1,0 +1,5 @@
+javac TestMultiB2.java
+TestMultiB2.java:5: methodA() in TestMultiB2 cannot override methodA() in TestMultiA; overridden method does not throw java.sql.SQLException
+  public void methodA()
+              ^
+1 error

@@ -1,0 +1,17 @@
+Build A Simple HRMS Application
+
+1. Add new joinee
+2. Find employee by ID
+3. Search employee by name
+4. List all employees
+
+Employee should have min 4 properties 
+and MAX 8 properties
+
+Every time application starts, it should try loading existing employees from a file.
+Once loading is completed, display a menu
+with choices for above 4 functionalities.
+PLUS option to quit
+depending upon user choices, perform the task.
+When user select "quit" option, first save all employees to the data file. and then close application.
+

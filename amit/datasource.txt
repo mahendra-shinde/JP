@@ -1,0 +1,73 @@
+import com.training.hrms.empInterface;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class EmployeeImp implements empInterface {
+
+    private LinkedList<Employee> empList=new LinkedList<>();
+
+    @Override
+    public void add(Employee emp) {
+        empList.add(emp);
+    }
+
+    @Override
+    public Employee findById(int empid) {
+        for(Employee b : empList){
+            if(b.getEmpId()==b.getEmpId()){
+                return b;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public List<Employee> findByfirstName(String firstName) {
+        List<Employee> temp = new ArrayList<>();
+        for(Employee b : empList){
+            if(b.getFirstName().toLowerCase().contains(firstName.toLowerCase())){
+                temp.add(b);
+            }
+        }
+        return temp;
+    }
+
+
+     static File file = null;
+
+        static{
+             file = new File("D:\\emp");
+            try {
+                if(file.exists()){
+                    System.out.println("EMPLOYEE DATA SOURCE FILE LOADED");
+                }
+                else
+                 {
+                    System.out.println("EMPLOYEE DATA FILE NOT FOUND.. CREATING EMPLOYEE DATA FILE..");
+                    file.createNewFile();}
+
+            }catch(IOException e){
+                System.out.println(e.getMessage());
+            }
+        }
+
+        public void ListAllEmployees(){
+            File file = new File("D:\\emp");
+            try {
+                FileInputStream in = new FileInputStream(file);
+                ObjectInputStream inObj = new ObjectInputStream(in);
+                ArrayList<Employee> employeesList = inObj.readObject();
+                for(Employee emp:employeesList){
+                    System.out.println(emp);
+                }
+
+            }catch(Exception e){
+                System.out.println(e.getMessage());
+            }
+
+        }
+
+
+}

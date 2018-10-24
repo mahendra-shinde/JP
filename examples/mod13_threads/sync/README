@@ -1,0 +1,4 @@
+Solution:
+
+  Step 1: javac -d . *.java
+  Step 2: java mod13.SyncTest
