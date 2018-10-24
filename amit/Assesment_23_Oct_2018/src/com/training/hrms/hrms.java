@@ -47,9 +47,15 @@ public class hrms {
                     try{
 
                         List<Employee> empname =empimp.findByfirstName(br.readLine());
-                            for(Employee a : empname){
+                        if (!empname.isEmpty() || (empname!=null)) {
+                            for (Employee a : empname) {
                                 System.out.println(a);
                             }
+                        }else{
+                            System.out.println("No Matching Records Founds");
+                        }
+
+
 
                        /* for (int i=0;i<empname.size();i++){
 
@@ -69,8 +75,7 @@ public class hrms {
                     BufferedReader br1 = new BufferedReader(re1);
                     try{
 
-                        Employee eid =empimp.findById(Integer.parseInt(br1.readLine()));
-
+                        Employee eid = empimp.findById(Integer.parseInt(br1.readLine()));
 
                         System.out.println("Author: "+eid.getFirstName()+", title: "+eid.getLastName());
 

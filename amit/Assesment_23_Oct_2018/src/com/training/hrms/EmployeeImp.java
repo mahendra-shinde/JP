@@ -11,19 +11,32 @@ import java.util.List;
 public class EmployeeImp implements empInterface {
 
     static File file = new File("D:\\emp");;
-
+    static ArrayList<Employee> employeesList;
     static{
        // file = new File("D:\\emp");
         try {
             if(file.exists()){
                 System.out.println("EMPLOYEE DATA SOURCE FILE LOADED");
+
+                FileInputStream in = new FileInputStream(file);
+                ObjectInputStream inObj = new ObjectInputStream(in);
+                Object emp = inObj.readObject();
+
+                employeesList = (ArrayList<Employee>) emp;
+
+                /*for (Employee e : employeesList) {
+
+
+                    System.out.println(e);
+                }*/
+
             }
             else
             {
                 System.out.println("EMPLOYEE DATA FILE NOT FOUND.. CREATING EMPLOYEE DATA FILE..");
                 file.createNewFile();}
 
-        }catch(IOException e){
+        }catch(IOException | ClassNotFoundException e){
             System.out.println(e.getMessage());
         }
     }
@@ -34,8 +47,7 @@ public class EmployeeImp implements empInterface {
             FileInputStream in = new FileInputStream(file);
             ObjectInputStream inObj = new ObjectInputStream(in);
            Object emp = inObj.readObject();
-            //System.out.println(emp);
-            //ArrayList<Employee>
+
            ArrayList<Employee> employeesList = (ArrayList<Employee>) emp;
 
             for (Employee e : employeesList) {
@@ -50,18 +62,15 @@ public class EmployeeImp implements empInterface {
     }
 
 
-
-
-
     ArrayList<Employee> empList = new ArrayList<>();
     @Override
     public void add(Employee emp) {
         try{
 
-            empList.add(emp);
+            employeesList.add(emp);
             FileOutputStream in = new FileOutputStream(file);
             ObjectOutputStream objout = new ObjectOutputStream(in);
-            objout.writeObject(empList);
+            objout.writeObject(employeesList);
             //objout.close();
 
         }catch(IOException e){
@@ -75,7 +84,7 @@ public class EmployeeImp implements empInterface {
 
     @Override
     public Employee findById(int empid) {
-        for(Employee b : empList){
+        for(Employee b : employeesList){
             if(b.getEmpId()==empid){
                 return b;
             }
@@ -86,10 +95,10 @@ public class EmployeeImp implements empInterface {
     @Override
     public List<Employee> findByfirstName(String firstName) {
         List<Employee> temp = null;
-        temp =new ArrayList<>();
-        if (!empList.isEmpty()){
 
-            for(Employee b : empList){
+        if (!employeesList.isEmpty()){
+            temp =new ArrayList<>();
+            for(Employee b : employeesList){
 
                 if(b.getFirstName().toLowerCase().contains(firstName.toLowerCase())){
                     temp.add(b);
