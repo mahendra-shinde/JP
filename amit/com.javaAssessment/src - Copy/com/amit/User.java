@@ -1,7 +1,5 @@
 package com.amit;
 
-//Create a Class with name “User” and with following properties: [10 Marks]
-//username, password, role, active [True/False]
 public class User extends  userDetails{
 
     String username;

@@ -11,9 +11,6 @@ import static com.amit.IllegalCredentialsException.MIN_UserName;
 
 public class UserManager {
 
-    //Create “UserManager” class with list of following users:
-    //add(User u), find(String name), getAll()
-
     String usernameM;
     String passwordM;
     String roleM;
@@ -28,7 +25,7 @@ public class UserManager {
 
     }
 
-    public List<userDetails> findByUserId(String uName) {
+    public List<userDetails> findByName(String uName) {
         List<userDetails> temp = null;
 
         if (!userList.isEmpty()){
@@ -69,19 +66,15 @@ public class UserManager {
         String rruser = vuserid;
 
         try {
-
-    //Username must contain at least 6 and maximum 12 characters
             if ((rruser.length() < MIN_UserName) || (rruser.length() > MAX_UserName)) {
 
                 uFlag = "False";
-                //Incase of any of these rules are violated, raise “IllegalCredentialException”
                 throw new IllegalCredentialsException();
             }
 
             if (rruser.isEmpty()) {
 
                 uFlag = "False";
-                //Incase of any of these rules are violated, raise “IllegalCredentialException”
                 throw new IllegalCredentialsException();
             }
 
@@ -117,16 +110,12 @@ public class UserManager {
 
         String rpass = vpass;
         try {
-            //Password must be minimum 8 characters long
             if ((rpass.length() < 8)) {
 
                 pFlag = "False";
-                //Incase of any of these rules are violated, raise “IllegalCredentialException”
                 throw new IllegalCredentialsException();
             }
 
-
-            //Password must contain at least ONE digit and ONE special character
             if (pFlag.equalsIgnoreCase("true")){
                 pFlag="False";
 
@@ -136,19 +125,18 @@ public class UserManager {
 
                     if (rpass.contains(sp[i])){
                         SpCharFlag="True";
-                       // System.out.println("special validate");
+                        System.out.println("special validate");
                         break;
                     }
                 }
 
-                //Password must contain at least ONE digit and ONE special character
                 String [] nos = {"1","2","3","4","5","6","7","8","9","0"};
 
                 for (int j=0; j<nos.length;j++){
 
                     if (rpass.contains(nos[j])){
                         SpIntFlag="True";
-                        //System.out.println("nos validate");
+                        System.out.println("nos validate");
                         break;
                     }
                 }
@@ -157,11 +145,6 @@ public class UserManager {
 
             if ((SpIntFlag.equalsIgnoreCase("True")) && (SpCharFlag.equalsIgnoreCase("True"))){
                 pFlag="True";
-            }else
-            {
-                pFlag="False";
-                //Incase of any of these rules are violated, raise “IllegalCredentialException”
-                throw new IllegalCredentialsException();
             }
 
             if (pFlag.equalsIgnoreCase("true")){
