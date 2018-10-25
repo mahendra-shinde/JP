@@ -7,7 +7,6 @@ public interface User_Interface {
     void add(userDetails userd);
     String validateUserId(String  uid);
     String validatePass(String pass);
-    List<userDetails> findByUserId(String usrName);
 
 
 

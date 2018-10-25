@@ -2,10 +2,8 @@ package com.amit;
 
 public class IllegalCredentialsException extends Exception{
 
-    //Q1. Create a User-defined “Unchecked Exception with name “IllegalCredentialsException”
     public static  final Integer MIN_UserName = 6;
     public static  final Integer MAX_UserName = 12;
-
     IllegalCredentialsException(){
 
         super("IllegalCredentialException : Issue withe Userid/Password entered");
