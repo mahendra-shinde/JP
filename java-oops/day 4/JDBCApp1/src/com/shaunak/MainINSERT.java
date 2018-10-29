@@ -1,18 +1,21 @@
 package com.shaunak;
 
+import jdk.nashorn.internal.ir.CatchNode;
+
+import javax.sql.rowset.JdbcRowSet;
+import javax.sql.rowset.RowSetProvider;
 import java.sql.*;
 
-public class Main {
+public class MainINSERT {
 
     /**
-     * Test Database connectivity with JDBC
+     * Test INSERT operation with JDBC
      * @param args
      */
     public static void main(String[] args) {
 
         Connection con = null;
         Statement st = null;
-        ResultSet rs = null;
 
             //Step 1: Load JDBC Driver
             try{
@@ -23,7 +26,7 @@ public class Main {
                 return; //Close main method
             }
 
-            //Step 2: Create a connection
+            /*//Step 2: Create a connection
             try{
                 con = DriverManager.getConnection(
                         "jdbc:oracle:thin:@localhost:1521/xe","hr","hr");
@@ -35,40 +38,44 @@ public class Main {
 
             //Step 3: Create Statement
             try {
-                st = con.createStatement();
+               st = con.createStatement();
                 System.out.println("Statement created!");
             }catch(SQLException ex){
                 System.out.println("Unable to create a statement! "+ex.getMessage());
             }
             //Step 4: Execute the statement
             try{
-                rs = st.executeQuery("SELECT first_name, last_name FROM employees");
-                System.out.println("Fetched some data!");
+                int rows = st.executeUpdate("INSERT into REGIONS VALUES(5,'Australia')");
+                System.out.println("Affected  records "+rows);
             }catch(SQLException ex){
-                System.out.println("Unable to fetch the data ! "+ex.getMessage());
+                System.out.println("Unable to insert the data ! "+ex.getMessage());
             }
-
-            //Step 5: OPTIONAL Process the result
-            try{
-                while(rs.next()){   //till there's no record left
-                    String fname = rs.getString(1);
-                    String lname = rs.getString(2);
-                    System.out.println("Name : "+fname+" "+lname);
-                }
-            }catch(SQLException ex){
-                System.out.println("Unable to travers the result set "+ex.getMessage());
-            }
-
 
             //Step 6: Close Connection
             try{
                 //close everything
-                rs.close();
                 st.close();
                 con.close();
                 System.out.println("Closed everything!");
             }catch(SQLException ex){
                 System.out.println("Error while closing the connection "+ex.getMessage());
+            }*/
+        try{
+            JdbcRowSet rowSet = RowSetProvider.newFactory().createJdbcRowSet();
+            rowSet.setUrl("jdbc:oracle:thin:@localhost:1521:orcl");
+            rowSet.setUsername("hr");
+            rowSet.setPassword("hr");
+            rowSet.setCommand("Select first_name, last_name from employees");
+            rowSet.execute();
+
+            while (rowSet.next())
+            {
+                System.out.println("Name: " + rowSet.getString(1)+" "+ rowSet.getString(2));
             }
+
+
+        } catch(SQLException ex){
+            System.out.println("Unable to connect: "+ex.getMessage());
+        }
     }
 }
