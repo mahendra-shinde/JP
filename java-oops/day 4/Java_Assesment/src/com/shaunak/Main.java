@@ -34,7 +34,7 @@ public class Main {
                    username= in.nextLine();
                    System.out.println("Please enter password: - ");
                    password= in.nextLine();
-                    LoginValidation lv = new LoginValidation()
+                    LoginValidation lv = new LoginValidation();
                    try {
 
                        if (username.length() < 6 || username.length() > 12) {
@@ -80,12 +80,20 @@ public class Main {
                    break;
 
                case "B":
+
                    System.out.println("Please enter username: - ");
                    username= in.nextLine();
+                 try{
                    User user = userDao.find(username);
                    user = userDao.find(username);
                    System.out.println("3. Found user with id: " + username);
-                   break;
+           } catch (IllegalCredentialsException e) {
+
+               System.out.println("3. Unable to find user with: " + username);
+               System.out.println(e.getUserId()+ e.getMessage());
+           }
+
+           break;
 
                case "C":
                    //This will allow user to Print All records.
@@ -102,7 +110,7 @@ public class Main {
                    System.out.println("Please enter password: - ");
                    password= in.nextLine();
                    try{
-                       //User user = userDao.find(username);
+                       User user = userDao.find(username);
                        user = userDao.find(username);
                        System.out.println("3. Found user with id: " + username);
 
@@ -117,7 +125,7 @@ public class Main {
                    } catch (IllegalCredentialsException e) {
 
                        System.out.println("3. Unable to find user with: " + username);
-                       System.out.println(e.getUserId()+ e.getMessage());
+                       System.out.println(e.getUserId()+" "+ e.getMessage());
                    }
 
                    break;
