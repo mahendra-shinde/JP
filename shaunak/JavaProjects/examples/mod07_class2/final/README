@@ -1,0 +1,4 @@
+TestBlank.java:7: cannot assign a value to final variable blankFinal
+  public void setBlankFinal(int x) { blankFinal = x; }
+                                     ^
+1 error

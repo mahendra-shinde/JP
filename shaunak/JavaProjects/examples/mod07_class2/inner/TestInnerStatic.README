@@ -1,0 +1,8 @@
+javac TestInnerStatic.java
+TestInnerStatic.java:3: inner classes cannot have static declarations
+    public static int classVar = 0;
+                      ^
+TestInnerStatic.java:4: inner classes cannot have static declarations
+    public static void doSomething() {
+                       ^
+2 errors
