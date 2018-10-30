@@ -1,0 +1,5 @@
+javac TestB2.java
+TestB2.java:2: methodA() in TestB2 cannot override methodA() in TestA; overridden method does not throw java.lang.Exception
+  public void methodA() throws Exception {
+              ^
+1 error
