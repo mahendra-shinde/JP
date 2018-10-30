@@ -1,4 +1,4 @@
-package com.mahendra;
+package com.swati;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.jUnit040Parameterized.testParameters030DataCSV;
+package com.shaunak;
 
 import static org.junit.Assert.assertEquals;
 

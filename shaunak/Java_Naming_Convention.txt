@@ -1,0 +1,10 @@
+Class name: TitleCase
+Method/Variable : camelCase
+
+Getter Name: getPropertName
+Setter Name: setPropertyName
+
+Package is Must
+Comments on Method
+
+Package name must be all lowercase
