@@ -44,14 +44,14 @@ public class TestDateDifference {
 	@Parameters
 	public static Collection<Object[]> getTestParameters() {
 		Collection<Object[]> dataList = new ArrayList<>();
-		String filePath = "F:\\JUnit\\JUnitWS\\JUnit010TestBasics\\src\\com\\jUnit040Parameterized\\testParameters030DataCSV";
+		
 		String fileName = "TestDateDifference.data";
 		
 		InputStream fis = null;
 		BufferedReader reader = null;
 		
 		try {
-			fis = new FileInputStream(filePath+File.separator+fileName);
+			fis = new FileInputStream(TestDateDifference.class.getResourceAsStream("/"+fileName));
 			reader = new BufferedReader(new InputStreamReader(fis));
 			reader.readLine(); // Bypass head row
 				
