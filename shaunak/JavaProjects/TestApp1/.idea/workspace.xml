@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7402d87d-7b69-42b4-ae25-0e26097c467e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shaunak/NoSufficientFundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestApp1/com/shaunak/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestApp1/com/shaunak/TestCalculator_junit4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestApp1/com/shaunak/TestCalculator_junit4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/TestCalculator_junit4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shaunak/TestCalculator_junit4.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,22 +32,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="183" />
+          <entry key="java" value="890" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="183" />
+          <entry key="JAVA" value="890" />
         </counts>
       </usages-collector>
     </session>
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestCalculator_junit4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state>
+              <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
@@ -84,7 +83,75 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <element signature="e#129#146#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/NoSufficientFundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-260">
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+              <folding>
+                <element signature="e#326#344#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -94,6 +161,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/shaunak/Calculator.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/TestCalculator_junit4.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/Account.java" />
+        <option value="$PROJECT_DIR$/src/NoSufficientFundException.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/NoSufficientFundException.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/AccountServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java" />
       </list>
     </option>
   </component>
@@ -144,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540877862255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540885115002" />
     <property name="last_opened_file_path" value="D:/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -162,13 +235,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCalculator_junit4">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.shaunak.Main" />
+  <component name="RunManager" selected="JUnit.AccountServiceTest.testNonExistingAccount">
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestApp1" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shaunak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shaunak" />
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.AccountServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestApp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shaunak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shaunak" />
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testDeposit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testNonExistingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestApp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shaunak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shaunak" />
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testNonExistingAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.testWithdraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestApp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shaunak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shaunak" />
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testWithdraw" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,31 +312,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCalculator_junit4.addDataSet01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestApp1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shaunak.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shaunak" />
-      <option name="MAIN_CLASS_NAME" value="com.shaunak.TestCalculator_junit4" />
-      <option name="METHOD_NAME" value="addDataSet01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.TestCalculator_junit4" />
-      <item itemvalue="JUnit.TestCalculator_junit4.addDataSet01" />
+      <item itemvalue="JUnit.AccountServiceTest" />
+      <item itemvalue="JUnit.AccountServiceTest.testWithdraw" />
+      <item itemvalue="JUnit.AccountServiceTest.testDeposit" />
+      <item itemvalue="JUnit.AccountServiceTest.testNonExistingAccount" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountServiceTest.testNonExistingAccount" />
+        <item itemvalue="JUnit.AccountServiceTest.testWithdraw" />
+        <item itemvalue="JUnit.AccountServiceTest.testDeposit" />
+        <item itemvalue="JUnit.AccountServiceTest" />
         <item itemvalue="JUnit.TestCalculator_junit4" />
-        <item itemvalue="JUnit.TestCalculator_junit4.addDataSet01" />
       </list>
     </recent_temporary>
   </component>
@@ -225,38 +339,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540874411154</updated>
-      <workItem from="1540874413782" duration="2947000" />
+      <workItem from="1540874413782" duration="8993000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 12m 04s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testDeposit - 2018.10.30 at 12h 30m 36s.xml">
+      <configuration name="AccountServiceTest.testDeposit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4_addDataSet01 - 2018.10.30 at 10h 15m 03s.xml">
-      <configuration name="TestCalculator_junit4.addDataSet01" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testDeposit - 2018.10.30 at 12h 31m 41s.xml">
+      <configuration name="AccountServiceTest.testDeposit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 15m 18s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testWithdraw - 2018.10.30 at 12h 36m 01s.xml">
+      <configuration name="AccountServiceTest.testWithdraw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 18m 50s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testWithdraw - 2018.10.30 at 12h 37m 58s.xml">
+      <configuration name="AccountServiceTest.testWithdraw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 25m 34s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 12h 38m 38s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 26m 29s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 12h 39m 11s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 27m 22s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 12h 39m 45s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalculator_junit4 - 2018.10.30 at 10h 36m 25s.xml">
-      <configuration name="TestCalculator_junit4" configurationId="JUnit" />
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 12h 39m 58s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 13h 08m 22s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceTest_testNonExistingAccount - 2018.10.30 at 13h 08m 37s.xml">
+      <configuration name="AccountServiceTest.testNonExistingAccount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2947000" />
+    <option name="totallyTimeSpent" value="8993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -268,7 +388,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -277,13 +397,13 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4640523" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3137255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.18683812" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.18683812" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Maven Projects" />
@@ -315,10 +435,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestCalculator_junit4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state>
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#193#194#0" expanded="true" />
@@ -330,6 +457,50 @@
             <element signature="e#730#731#0" expanded="true" />
             <element signature="e#774#775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/NoSufficientFundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="e#129#146#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="e#326#344#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
