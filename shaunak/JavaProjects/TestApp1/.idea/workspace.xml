@@ -149,7 +149,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
+            <state relative-caret-position="-204">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
@@ -251,7 +251,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540896725736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540897605928" />
     <property name="last_opened_file_path" value="D:/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -379,7 +379,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540874411154</updated>
-      <workItem from="1540874413782" duration="15031000" />
+      <workItem from="1540874413782" duration="15980000" />
     </task>
     <servers />
   </component>
@@ -416,7 +416,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15031000" />
+    <option name="totallyTimeSpent" value="15980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
+        <state relative-caret-position="-204">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
