@@ -9,6 +9,11 @@ public class Main {
         System.out.println("Compound Interest "+interest);
          Main m = new Main();
          m.main();
+
+        InterestCalculator SICalc =
+                new InterestCalculator(340000,11.2,60);
+        interest = SICalc.calculate();
+        System.out.println("Simple Interest "+interest);
     }
 
     public void main(){
