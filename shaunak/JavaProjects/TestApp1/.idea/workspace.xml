@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7402d87d-7b69-42b4-ae25-0e26097c467e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/MyDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shaunak/MyDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/MyDateServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shaunak/MyDateServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/TestDateDifference.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDateDifference.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7402d87d-7b69-42b4-ae25-0e26097c467e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1173" />
+          <entry key="java" value="1201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1173" />
+          <entry key="JAVA" value="1201" />
         </counts>
       </usages-collector>
     </session>
@@ -138,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
@@ -147,6 +142,15 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#1878#1879#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-357">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -194,9 +198,9 @@
         <option value="$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/MySuite.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java" />
-        <option value="$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/MyDateServices.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/MyDate.java" />
+        <option value="$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java" />
       </list>
     </option>
   </component>
@@ -247,7 +251,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540894771807" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540896725736" />
     <property name="last_opened_file_path" value="D:/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -375,14 +379,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540874411154</updated>
-      <workItem from="1540874413782" duration="14690000" />
+      <workItem from="1540874413782" duration="15031000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MySuite - 2018.10.30 at 15h 28m 59s.xml">
-      <configuration name="MySuite" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 29m 04s.xml">
       <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
     </history-entry>
@@ -410,9 +411,12 @@
     <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 33m 19s.xml">
       <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestDateDifference - 2018.10.30 at 16h 16m 45s.xml">
+      <configuration name="TestDateDifference" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14690000" />
+    <option name="totallyTimeSpent" value="15031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,16 +437,16 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="2" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32843137" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3137255" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3137255" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -573,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -588,6 +585,13 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1878#1879#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
