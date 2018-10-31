@@ -51,7 +51,12 @@ public class TestDateDifference {
 		BufferedReader reader = null;
 		
 		try {
+<<<<<<< HEAD
+			fis = new FileInputStream(TestDateDifference.class.getResourceAsStream("/"+fileName));
+			reader = new BufferedReader(new InputStreamReader(fis));
+=======
 			reader = new BufferedReader(new InputStreamReader(TestDateDifference.class.getResourceAsStream("/"+fileName)));
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
 			reader.readLine(); // Bypass head row
 				
 			String dataRow = reader.readLine();

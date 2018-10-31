@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7402d87d-7b69-42b4-ae25-0e26097c467e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shaunak/MySuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java" beforeDir="false" />
+    </list>
+=======
     <list default="true" id="7402d87d-7b69-42b4-ae25-0e26097c467e" name="Default Changelist" comment="" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,22 +36,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
+          <entry key="java" value="9" />
+=======
           <entry key="java" value="13" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
+          <entry key="JAVA" value="9" />
+=======
           <entry key="JAVA" value="13" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="java" value="1137" />
+=======
           <entry key="java" value="1201" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="JAVA" value="1137" />
+=======
           <entry key="JAVA" value="1201" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         </counts>
       </usages-collector>
     </session>
@@ -133,6 +158,17 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1878#1879#0" expanded="true" />
+              </folding>
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -169,6 +205,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
             </state>
           </provider>
         </entry>
@@ -198,9 +235,12 @@
         <option value="$PROJECT_DIR$/src/com/shaunak/AccountParameterized.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/MySuite.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/src/com/shaunak/MyDateServices.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/MyDate.java" />
         <option value="$PROJECT_DIR$/src/com/shaunak/TestDateDifference.java" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       </list>
     </option>
   </component>
@@ -251,16 +291,23 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540893779961" />
+=======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540897605928" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     <property name="last_opened_file_path" value="D:/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+<<<<<<< HEAD
+=======
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\Shaunak\JP\shaunak\JavaProjects\TestApp1\src" />
     </key>
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\Shaunak\JP\shaunak\JavaProjects\TestApp1\src\com\shaunak" />
     </key>
@@ -277,7 +324,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.AccountParameterizedTest.sum">
+=======
   <component name="RunManager" selected="JUnit.TestDateDifference">
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     <configuration name="AccountParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestApp1" />
       <extension name="coverage">
@@ -324,7 +375,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="AccountServiceTest.testNonExistingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
     <configuration name="MySuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <module name="TestApp1" />
       <extension name="coverage">
         <pattern>
@@ -333,12 +388,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.shaunak" />
+<<<<<<< HEAD
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.AccountServiceTest" />
+      <option name="METHOD_NAME" value="testNonExistingAccount" />
+      <option name="TEST_OBJECT" value="method" />
+=======
       <option name="MAIN_CLASS_NAME" value="com.shaunak.MySuite" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="MySuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
     <configuration name="TestDateDifference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <module name="TestApp1" />
       <extension name="coverage">
         <pattern>
@@ -347,25 +412,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.shaunak" />
+<<<<<<< HEAD
+      <option name="MAIN_CLASS_NAME" value="com.shaunak.MySuite" />
+=======
       <option name="MAIN_CLASS_NAME" value="com.shaunak.TestDateDifference" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
+      <item itemvalue="JUnit.AccountServiceTest.testNonExistingAccount" />
+=======
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <item itemvalue="JUnit.AccountParameterizedTest" />
       <item itemvalue="JUnit.AccountParameterizedTest.testWithdraw" />
       <item itemvalue="JUnit.MySuite" />
       <item itemvalue="JUnit.AccountParameterizedTest.sum" />
+<<<<<<< HEAD
+    </list>
+    <recent_temporary>
+      <list>
+=======
       <item itemvalue="JUnit.TestDateDifference" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestDateDifference" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         <item itemvalue="JUnit.AccountParameterizedTest.sum" />
         <item itemvalue="JUnit.AccountParameterizedTest" />
         <item itemvalue="JUnit.MySuite" />
         <item itemvalue="JUnit.AccountParameterizedTest.testWithdraw" />
+<<<<<<< HEAD
+        <item itemvalue="JUnit.AccountServiceTest.testNonExistingAccount" />
+=======
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       </list>
     </recent_temporary>
   </component>
@@ -379,11 +462,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540874411154</updated>
+<<<<<<< HEAD
+      <workItem from="1540874413782" duration="12746000" />
+=======
       <workItem from="1540874413782" duration="15980000" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
+    <history-entry file="MySuite - 2018.10.30 at 15h 18m 06s.xml">
+      <configuration name="MySuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MySuite - 2018.10.30 at 15h 28m 59s.xml">
+      <configuration name="MySuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 29m 04s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 29m 19s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 30m 51s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 30m 56s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 31m 45s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 32m 18s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest - 2018.10.30 at 15h 32m 18s.xml">
+      <configuration name="AccountParameterizedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 32m 41s.xml">
+      <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12746000" />
+=======
     <history-entry file="AccountParameterizedTest_sum - 2018.10.30 at 15h 29m 04s.xml">
       <configuration name="AccountParameterizedTest.sum" configurationId="JUnit" />
     </history-entry>
@@ -417,6 +539,7 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="15980000" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,8 +569,13 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3137255" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.39869282" />
+=======
       <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3137255" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39869282" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32843137" />
@@ -468,6 +596,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/Main.java">
@@ -549,6 +689,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/MyDateServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -556,6 +698,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -570,6 +713,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/com/shaunak/AccountParameterizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+=======
     <entry file="file://$PROJECT_DIR$/src/com/shaunak/MyDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -581,10 +730,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1878#1879#0" expanded="true" />
           </folding>
+<<<<<<< HEAD
+=======
         </state>
       </provider>
     </entry>
@@ -592,6 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+>>>>>>> a5a8919aba419ac0bd927ad33354f55d9afe5b00
         </state>
       </provider>
     </entry>
