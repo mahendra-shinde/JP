@@ -1,4 +1,4 @@
-package com.jUnit040Parameterized.testParameters030DataCSV;
+package com.shaunak;
 
 public class MyDate {
 	private int dd;

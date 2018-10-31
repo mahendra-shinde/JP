@@ -9,7 +9,7 @@ public class CompoundInterestCalculator extends InterestCalculator {
        super(principal,rate,duration);
     }
 
-    public final CompoundInterestCalculator
+    public CompoundInterestCalculator
             (double principal, double rate){
         //Call to Super() must be FIRST statement
         super(principal,rate);

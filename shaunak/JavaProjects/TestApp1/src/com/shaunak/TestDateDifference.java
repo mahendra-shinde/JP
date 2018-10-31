@@ -1,4 +1,4 @@
-package com.jUnit040Parameterized.testParameters030DataCSV;
+package com.shaunak;
 
 import static org.junit.Assert.assertEquals;
 
@@ -44,15 +44,14 @@ public class TestDateDifference {
 	@Parameters
 	public static Collection<Object[]> getTestParameters() {
 		Collection<Object[]> dataList = new ArrayList<>();
-		String filePath = "F:\\JUnit\\JUnitWS\\JUnit010TestBasics\\src\\com\\jUnit040Parameterized\\testParameters030DataCSV";
+		
 		String fileName = "TestDateDifference.data";
 		
 		InputStream fis = null;
 		BufferedReader reader = null;
 		
 		try {
-			fis = new FileInputStream(filePath+File.separator+fileName);
-			reader = new BufferedReader(new InputStreamReader(fis));
+			reader = new BufferedReader(new InputStreamReader(TestDateDifference.class.getResourceAsStream("/"+fileName)));
 			reader.readLine(); // Bypass head row
 				
 			String dataRow = reader.readLine();
