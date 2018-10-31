@@ -21,6 +21,7 @@
     <session id="1469584584">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -251,7 +252,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540897605928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540897776620" />
     <property name="last_opened_file_path" value="D:/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -379,7 +380,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540874411154</updated>
-      <workItem from="1540874413782" duration="15980000" />
+      <workItem from="1540874413782" duration="16203000" />
     </task>
     <servers />
   </component>
@@ -416,7 +417,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15980000" />
+    <option name="totallyTimeSpent" value="16203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +430,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -446,7 +446,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3137255" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3137255" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
