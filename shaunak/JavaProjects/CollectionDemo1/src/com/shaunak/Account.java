@@ -59,7 +59,7 @@ public class Account {
     }
     @Override
     public String toString(){
-        return ("Account Holder: " +accHolderName+ " Has A/C No: "+ accountNo+ " of A/C Type: "+accountType+" having Balance of: "+currentBalance);
+        return ("Account Holder: " +accHolderName+ " Has a "+ accountType+ " A/C with No "+accountNo+" having Balance of: "+currentBalance);
     }
 
 

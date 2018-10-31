@@ -17,7 +17,7 @@ public class InterestCalculator {
         this.duration = 36;
     }
 
-   final public double calculate(){
+    public double calculate(){
         return principal*rate/100/12*duration;
     }
 }
