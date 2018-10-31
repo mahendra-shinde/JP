@@ -1,0 +1,27 @@
+Swati
+
+Q1  - B
+Q2  - D
+Q3  - True
+Q4  - D
+Q5  - D
+Q6  - C
+Q7  - C
+Q8  - D
+Q9  - Composition
+Q10 - FALSE
+Q11 - D
+Q12 - Structural
+Q13 - Adapter
+Q14 - False
+Q15 - D
+Q16 - C
+Q17 - D
+Q18 - B
+Q19 - FALSE
+Q20 - C
+Q21 - D
+Q22 - A
+Q23 - A
+Q24 - B
+Q25 - B
