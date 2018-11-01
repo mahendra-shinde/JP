@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Poll : Most favourite planet</h2>
+    <form method="GET">
+        Name of planet : <select name="planet">
+                            <option value="me">Mercury</option>
+                            <option value="ve">Venus</option>
+                            <option value="ea" selected>Earth</option>
+                            <option value="ma">Mars</option>
+                            <option value="jp">Jupiter</option>
+                            <option value="ur">Uranus</option>
+                            <option value="ne">Neptune</option>
+                        </select> <br/>
+        Your name:      <input name="uname"/><br/>
+        Gender:         <input type="radio" name="gender" value="Female"/> Female
+                        <input type="radio" name="gender" value="Male"/> Male<br/>
+        Your interests: <input type="checkbox" name="interests" value="exo-planets">Extra Solar exo-planets<br/>
+        <input type="checkbox" name="interests" value="planets" checked disabled>Solar system planets<br/>
+        <input type="checkbox" name="interests" value="black-holes">Black Holes<br/>
+        
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+
+    </form>
+</body>
+</html>
