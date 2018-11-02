@@ -1,0 +1,35 @@
+Inventory Management System
+  
+  Product	
+	id, name, description, catalogId
+
+  ProductCatalog	
+	id, name
+
+  StockUnit
+	unitId, productId, quantity
+
+
+InventoryDAO:
+	Maintain List of Product (For Collections)
+	Maintain Set of ProductCatalog
+	Maintain MAP of StockUnits
+	Map<Integer, StockUnit>
+	where each StockUnit contains
+		Id, productId & Quantity
+
+Main App:
+	Menu for User:
+	A.	Add new product
+	I.	Add new Stock Unit
+		for Existing product
+	L.	List all products
+	P.	List all Stock Units
+		(With Quantity)
+	S.	Search for Stock Units by Product
+			User enters Product Name
+	Q.	Quit
+
+
+Write test cases for A,I,L,P & S options
+		
