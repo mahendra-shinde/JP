@@ -1,0 +1,8 @@
+<product xmlns="urn:mahendra.com:schema1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:mahendra.com:schema1 schema1.xsd">
+    <product-id>1.00</product-id>
+    <name>Abcd</name>
+    <price>16</price>
+
+</product>
