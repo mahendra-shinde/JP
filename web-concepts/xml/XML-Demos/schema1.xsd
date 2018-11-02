@@ -1,0 +1,42 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:mahendra.com:schema1"
+            xmlns:t="urn:mahendra.com:schema1"
+            elementFormDefault="qualified" >
+    <xsd:element name="product-list">
+        <xsd:complexType>
+            <xsd:sequence>
+
+    <xsd:element name="product" minOccurs="2" maxOccurs="50" >
+
+    <xsd:complexType >
+        <xsd:sequence>
+            <xsd:element name="name" type="t:pname"/>
+            <xsd:element name="price" type="t:priceType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ID" type="xsd:positiveInteger" use="prohibited" fixed="100" />
+    </xsd:complexType>
+
+</xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="pname">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="12"/>
+            <xsd:pattern value="[A-Z][a-zA-Z0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+<!-- Definition for new User Defined Simple Type called "priceType"  -->
+    <xsd:simpleType name="priceType">
+        <!-- Inherit from Exiting Simple type "double"
+             Base type MUST BE SimpleType
+            -->
+        <xsd:restriction base="xsd:double">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="99999.9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

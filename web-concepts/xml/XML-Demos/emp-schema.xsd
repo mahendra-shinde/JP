@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:mahendra.com:schema2"
+            xmlns:e="urn:mahendra.com:schema2"
+             >
+    <xsd:include  schemaLocation="emp-types.xsd"/>
+
+    <xsd:element name="emp-list">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="employee" minOccurs="1" maxOccurs="10" />
+            </xsd:sequence>
+        </xsd:complexType>
+
+    </xsd:element>
+</xsd:schema>

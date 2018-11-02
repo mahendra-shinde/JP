@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:mahendra.com:schema2"
+            xmlns:e="urn:mahendra.com:schema2"
+>
+
+
+<xsd:element name="employee" type="e:emp"/>
+<xsd:element name="department" type="e:dept"/>
+<xsd:element name="designation" type="xsd:string"/>
+<xsd:element name="name" type="xsd:string"/>
+
+<xsd:complexType name="emp">
+    <xsd:sequence>
+        <xsd:element ref="name"/>
+        <xsd:element ref="designation"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="dept">
+    <xsd:sequence>
+        <xsd:element ref="name"/>
+    </xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
