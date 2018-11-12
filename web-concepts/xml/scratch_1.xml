@@ -2,7 +2,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mahendra.com:schema1 schema1.xsd">
 
+    <name>Abcd</name>
     <price>16</price>
 
-    <name>Abcd</name>
+
+
 </product>
