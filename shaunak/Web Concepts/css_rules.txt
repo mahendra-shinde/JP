@@ -1,0 +1,23 @@
+Box Properties:
+	margin: Space between elements
+	padding: Space between content of an element and it's boarders
+	boarder: boarder for the element
+Note: These properties are NOT inherited bt child elements
+
+
+Suffix Can be used:
+-left
+-right
+-top
+-bottom
+
+
+
+Text/Font Properties:
+---- Inherited by Child elements
+	font-size: Unites [px pixels, cm centimeters, pt points]
+	
+	font-family: list of font names
+	font-weight: bold, normal
+	color: color of text
+	
