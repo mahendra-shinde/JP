@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mera Bank : Account Opening Form</title>
+
+    <style type="text/css">
+
+    .mandatory{
+        border: 4pt solid red;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+        text-align: center;
+    }
+
+    .optional{
+        border: 4pt light blue;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+        text-align: center;
+    }
+
+    #list1{
+
+         border: 4pt light blue;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+        text-align: center;
+    }
+
+    </style>
+
+    <form name="act_open" action="">
+        Full Name: Title: <input type="text" name="n"/>
+        Name: <input type="text" name="n"/>
+        SurName: <input type="text" name="n"/>
+        <br/>
+        <br/>
+        Gender : <input type="Radio" value="Male" name="Male">Male
+        <input type="Radio" value="Female" name="Female"/>Female
+        <br/>
+        <br/>
+        Aadhar Card No:<input type="text" name="aadno"/>
+        <br/> <br/>
+        Pan No:<input type="text" name="panno" class="mandatory"/>
+        <br/> <br/>
+        Type Of Account : <input type="Radio" value="Saving", name="Saving"/>Saving
+        <input type="Radio" value="Current", name="Current"/>Current
+        <br/> <br/>
+        Occupation : <input type="Radio" value="Salaried", name="Salaried" id="list1"/>Salaried
+        <input type="Radio" value="Business", name="Business"/>Business
+        <input type="Radio" value="Professional", name="Professional"/>Professional
+        <br/> <br/>
+
+
+
+
+        Services : <input type="checkbox" value="NetBanking", name="NetBanking"/>NetBanking
+        <input type="checkbox" value="Debit Card", name="Debit Card"/>Debit Card
+        <input type="checkbox" value="Mobile Banking", name="Mobile Banking"/>Mobile Banking
+        <br/> <br/>
+
+        Country : <select  name="country">
+            <option>India</option>India
+            <option>United States</option>United States
+            <option>Great Britain</option>Great Britain
+        </select>
+        
+        <br/> <br/>
+        <input type="Submit" value="Submit", name="Submit"/>
+        <input type="reset" value="Reset", name="Reset"/>
+        
+
+
+
+
+    </form>
+    
+</head>
+<body>
+    
+</body>
+</html>
