@@ -6,27 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        canvas{
-            background-color:bisque; 
-            border: 1pt solid black;
-        }
+    canvas{
+        border:1pt solid black;
+    }
     </style>
-    <script>
-    var myCanvas = document.getElementById("CAN1");
-    var ctx = myCanvas.getContext("2d");
-    </script>
+   
 </head>
 <body>
     <h2>Video Playback</h2>
 
     Tries to play the FIRST video, else play Second
-    <video controls autoplay = "autoplay" muted="muted">
+    <video controls autoplay muted>
         <source src="videos/small.ogv" type="video/ogg" />
         <source src="videos/small.webm" type="video/webm" />
         <source src="videos/small.mp4" type="video/mp4"/>
     </video>
-    <canvas id="CAN1" width="200" height="200">
-
+<br/>
+    <canvas id="can1" width="200" height="200">
+        Your browser doesn't support canvas!
+    </canvas>
+    <br/>
+    <canvas id="can2" width="200" height="200">
     </canvas>
 </body>
+<script>
+        var myCanvas = document.getElementById("can1");
+        var ctx = myCanvas.getContext("2d");
+            ctx.fillStyle='#ff0099';
+            ctx.fillRect(0,0,100,100);
+            ctx.fillStyle='#ff9900';
+            ctx.fillRect(50,20,120,120);
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.rect(10,10,150,150);
+        var myCanvas1 = document.getElementById("can2");
+        var ctx1 = myCanvas1.getContext("2d");
+            for(i=0;i<=1000;i++)
+            {
+            ctx1.rotate(2*Math.PI/180);
+            ctx1.fillRect(150,50,10,10); 
+            ctx1.stroke(); 
+            }
+            
+        </script>
 </html>
