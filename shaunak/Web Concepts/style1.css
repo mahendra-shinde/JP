@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2pt solid red;
+}
+
+h4{
+border: 1pt dotted green;
+}
+h2
+{
+background-color:pink;
+border: 2px solid black;
+border-radius: 10px;
+padding: 10px;
+text-align: left;
+text-transform: uppercase;
+}
+.backeffects{
+
+    background-color: beige;
+    border: 3px solid red;
+    border-radius: 10px; 
+}
