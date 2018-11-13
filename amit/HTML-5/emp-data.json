@@ -1,0 +1,19 @@
+{"empdata": [{
+
+    "emp":"Emp1",
+    "empId":22,
+    "name":{"firstname":"Amit","lastname":"pandey"},
+    "address":{"line1":"Maha","city":"Mimbai","postalCode":"40001"}
+},
+
+{
+
+    "emp":"Emp2",
+    "empId":33,
+    "name":{"firstname":"Abc","lastname":"xyz"},
+    "address":{"line1":"rety","city":"rtyrety","postalCode":"546345"}
+}
+    
+]
+
+}

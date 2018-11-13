@@ -1,0 +1,28 @@
+<empdata>
+<emp>
+<empid>122</empid>
+   <empname>
+        <firstname>abc</firstname>
+        <lastname>abc11</lastname>
+    </empname>
+  <address>
+        <line1>stree1</line1>
+        <line2>stree2</line2>
+        <pin>546876</pin>
+ </address>
+</emp>
+
+<emp>
+<empid>144</empid>
+   <empname>
+        <firstname>xyz</firstname>
+        <lastname>xyz11</lastname>
+    </empname>
+  <address>
+        <line1>stre221</line1>
+        <line2>stree332</line2>
+        <pin>546876</pin>
+ </address>
+</emp>
+
+</empdata>
