@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Demo</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        #main{
+            width:1000px;
+            height:700px;
+        }
+        #main header {
+            height: 70px;
+            text-align: center;
+            padding: 5px;
+            background-color: bisque; 
+        }
+        #main .contentPanel{
+            height: 500px;
+            width: 800px;
+            background-color: cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <table id="main" border=2>
+        <tr><td colspan="2"><header>Header</header></td></tr>
+        <tr><td><nav>Nav Bar</nav></td><td class="contentPanel">Content</td></tr>
+        <tr><td colspan="2">Footer</td></tr>
+    </table>
+</body>
+</html>
