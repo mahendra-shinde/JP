@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Demo</title>
+    <style>
+        body{
+            margin:10px;
+            padding:1px;
+        }
+        #main{
+            width:500px;
+            height:300px;
+        }
+        #main header {
+            height: 70px;
+            text-align: center;
+            padding: 5px;
+            background-color: yellow; 
+        }
+        #main .mainPanel{
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+        }
+        #main .pollPanel{
+            height: 200px;
+            width: 100px;
+            background-color:chartreuse;
+        }
+        
+    </style>
+</head>
+<body>
+    <table id="main" border=2>
+        <tr><td colspan="2"><header><h1>The Times of Andheri</h1></header></td></tr>
+        <tr><td class="mainPanel">
+            <section>
+                <article>
+                    <h2>Mumbai Metro in Section</h2>
+                    <p>Mumbai Metro line 1 runs between Ghatkopar and Versova</p>
+                </article>
+                </section>
+                </td><td class="pollPanel" rowspan="2"><h2>Today's Poll</h2>
+                <br/>
+                Who is the Best Cricketer : <br/>
+                <form action="form1" method="GET" >
+                <input type=radio name="bestcricketer" value="Sachin"/>Sachin Tendulkar <br/>
+                <input type=radio name="bestcricketer" value="mahi"/>M S Dhoni<br/>
+                <input type=radio name="bestcricketer" value="viru"/>Virat Kohli<br/>
+                <input type="submit" value="Submit"/>
+                </form>
+             </td></tr>
+        <tr><td class="mainPanel">
+                <section>
+                        <h2>BEST to cancel Route #370</h2>
+                            <p>Route#370 is a loss making Route</p>
+                        </section>   
+                        </td></tr>
+       
+    </table>
+</body>
+</html>
