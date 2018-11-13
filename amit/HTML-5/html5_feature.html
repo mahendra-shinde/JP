@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo1 - HTML5</title>
+    <script src="Modernizr-custom.js">
+    </script>
+    
+    
+    
+    <script>
+    if(Modernizr.canvas){
+        alert("Canvas is Supported!");
+    }
+    else{
+        alert("Canvas is not supported!");
+    }
+    if(Modernizr.video){
+        alert("Video is Supported");
+    }
+    else{
+        alert("Video is NOT supported");
+    }
+    </script>
+</head>
+
+<body>
+
+    <form id="frm1">
+        Enter name : <input type="text" name="name" required /><br/>
+        Age : <input type="number" name="age" required min = 0/><br/> 
+        Gender : <input type=radio name="gender" value="male"/>Male <input type=radio name="gender" value="female"/>Female <br/>
+        Date of Birth : <input type="date" name="dob" required /><br/>
+        EMail : <input type="email" name="email"  required /><br/>
+        <input type="submit" value="Submit"/>
+
+ </form>
+</body>
+
+
+</html>

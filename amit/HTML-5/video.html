@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <canvas id="can1" width="200" height="200">
+                Your browser doesn't support canvas!
+        </canvas>
+
+        <form action="" name ="hello">
+            Select Color<input type="color" name ="color seleter"/>
+            Enter URL <input type="url" name ="url input"/>
+            Search <input type="search" name ="serach input"/>
+            Range <input type="range" name ="select range" min=10 max =500/>
+        </form>
+
+    
+</body>
+
+<script>
+        var myCanvas = document.getElementById("can1");
+        var ctx = myCanvas.getContext("2d");
+            ctx.fillStyle='#ff0099';
+            ctx.fillRect(0,0,100,100);
+            ctx.fillStyle='#ff9900';
+            ctx.fillRect(50,20,120,120);
+    
+
+        </script>
+</html>
