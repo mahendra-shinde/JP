@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="176291f1-4c19-40a3-b08c-8e72203ac463" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../JavaProjects/XMLDemos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaProjects/XMLDemos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fav-planet.html" beforeDir="false" afterPath="$PROJECT_DIR$/fav-planet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solar-system.html" beforeDir="false" afterPath="$PROJECT_DIR$/solar-system.html" afterDir="false" />
-    </list>
+    <list default="true" id="176291f1-4c19-40a3-b08c-8e72203ac463" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +13,7 @@
     <session id="-995944296">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="2" />
@@ -198,7 +192,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
