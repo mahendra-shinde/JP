@@ -1,0 +1,23 @@
+country 
+  > name
+  > gdp
+  > states
+      > name
+      > cities
+	  > name
+	  > population
+
+
+Try seperate JSON for TWO countries
+Try single JSON for TWO countries
+
+-----------
+
+city [At least 5]
+ > name
+ > temp
+    > min
+    > max
+
+------------
+
