@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas{
+            background-color:bisque; 
+            border: 1pt solid black;
+        }
+    </style>
+    <script>
+    var myCanvas = document.getElementById("CAN1");
+    var ctx = myCanvas.getContext("2d");
+    </script>
+</head>
+<body>
+    <h2>Video Playback</h2>
+
+    Tries to play the FIRST video, else play Second
+    <video controls autoplay = "autoplay" muted="muted">
+        <source src="videos/small.ogv" type="video/ogg" />
+        <source src="videos/small.webm" type="video/webm" />
+        <source src="videos/small.mp4" type="video/mp4"/>
+    </video>
+    <canvas id="CAN1" width="200" height="200">
+
+    </canvas>
+</body>
+</html>
