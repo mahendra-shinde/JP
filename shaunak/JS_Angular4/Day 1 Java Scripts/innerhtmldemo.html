@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function fetchtext()
+        {
+            para1=document.getElementById("para");
+            alert("Paragraph Along with HTML Tags: " +para1.innerHTML);
+            alert("Paragraph text only: " +para1.innerText);
+        }
+        </script>
+    </head>
+    <body>
+        <p id="para" onclick="fetchtext()"><b>This is a Paragraph</b></p>
+    </body>
+</html>

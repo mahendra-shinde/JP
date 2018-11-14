@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Module Score Calculation</title>
+        <script>
+                function validateForm()
+                {
+                    var empnum = document.forms["frm1"]["Empnum"].value;
+                    var empname = document.forms["frm1"]["Empname"].value
+                    //alert(x);
+                    if (empnum.length!=6)
+                    {
+                        alert("Emp ID must be of 6 digit");
+                        return false;
+                    }
+                    if (empname.length>30)
+                    {
+                        alert("Emp Name must be of maximum 30 character");
+                        return false;
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <form id="frm1" >
+            Enter Employee Number : <input type="text" name="Empnum"/><br/>   
+            Enter Employee Name : <input type="text" name="Empname" required /><br/>
+            Choose Domain :  <select name="domain" id="dmn">
+                    <option value="JEE">JEE</option>
+                    <option value=".NET">.NET</option>
+                </select> <br/> 
+            Choose Module :<select name="module" id="mdl">
+                    <option value="JEE">JEE</option>
+                    <option value=".NET">.NET</option>
+                    <option value=".NET">.NET</option>
+                </select>
+                </br>
+            Enter MPT Marks : <input type="text" name="mpt" required /><br/>
+            Enter MTT Marks : <input type="text" name="mtt" required /><br/>
+            Enter Assignment Marks : <input type="text" name="assgn" required /><br/>
+            </select> <br/> 
+               <input type="submit" name"calculate" value="Calculate Module Score" onclick="validateForm()"/>
+
+        </form>
+
+    </body>
+</html>

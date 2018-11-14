@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function displaytextb1()
+        {
+                para1=document.getElementById("para")
+                para.innerHTML =para1.innerHTML + "<p><b>This is from Button 1</b></p>";
+        }
+        function displaytextb2()
+        {
+           para2=document.getElementById("para");
+           para.innerHTML =para2.innerHTML + "<p><b>This is from Button 2</b></p>";
+        }
+</script>
+    </head>
+    <body>
+        <input type = "button" name="box1" value="Show Message 1" onclick="displaytextb1()"/>
+        <input type = "button" name="box2" value="Show Message 2" onclick="displaytextb2()"/>
+        <p id="para"><b>This is By default Paragraph</b></p>
+    </body>
+</html>
