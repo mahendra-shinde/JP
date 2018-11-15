@@ -1,0 +1,21 @@
+emberjs ->Group 3(Neha,Swati,Anil)
+
+reactjs->Group 4(Ritesh,Ruby,Darshan)
+
+angularjs->Gtoup 1(Zubair ,Arpita)
+
+viewjs->Group 5(Chandra,Shaunak,Viral)
+
+knooutjs/extjs -Group 2(Sunil,Amit,Rohit)
+
+Topics Points to be covered
+why?
+What?
+How?
+
+Histroy
+Difference between other front end technologies
+what is virtual dom for ReactJs
+what is MVC
+
+

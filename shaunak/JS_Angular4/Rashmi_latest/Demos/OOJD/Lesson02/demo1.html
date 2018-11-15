@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script>
+        function Employee(empId, empName, empSalary, empDep) {
+            this.empId = empId;
+            this.empName = empName;
+            this.empSalary = empSalary;
+            this.empDep = empDep;
+            this.totalSalary;
+            this.getTakeHomeSalary = function () {
+                this.totalSalary = this.empSalary - (this.empSalary * 0.12);
+                console.log("Employee Take Home Salary" + this.totalSalary)
+            }
+        }
+        Employee.prototype.greet = function () {
+            console.log("WELCOME to PROTOTYPE");
+        }
+        var emp = new Employee(1001, "rash1", 8888, "Java");
+        emp.getTakeHomeSalary();
+        var empOne = new Employee(1002, "rash2", 98888, ".Net");
+        empOne.getTakeHomeSalary();
+        // emp.greet = function () {
+        //     console.log("WELCOME to PROTOTYPE");
+        // }
+        // emp.greet();
+        empOne.greet();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<!-- <html>
+<head>
+<script>
+function Employee(empId,empName,empSalary,empDep){
+this.empId=empId;
+this.empName=empName;
+this.empSalary=empSalary;
+this.empDep=empDep;
+this.totalSalary;
+Employee.prototype.getTakeHomeSalary=function(){
+this.totalSalary=this.empSalary-(this.empSalary*0.12);
+console.log("Employee Take Home Salary"+this.totalSalary)
+}}
+Employee.prototype.greet=function(){
+console.log("WELCOME to PROTOTYPE");}
+var emp=new Employee(1001,"Abcd",8888,"Java");
+emp.getTakeHomeSalary();
+var empOne=new Employee(1002,"bcd",98888,".Net");
+empOne.getTakeHomeSalary();
+empOne.greet();
+</script>
+</head>
+<body>
+</body>
+</html> -->

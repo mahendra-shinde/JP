@@ -1,0 +1,25 @@
+<html>
+<body>
+	<form id="myForm">
+	Firstname: <input id="fname" type="text" value="rashmi" >
+	Lastname: <input id="lname" type="text" value="pawaskar" >
+	salary: <input id="salary" type="text" value="10000" >
+	qualification: <input id="qualification" type="text" value="BE" >
+	
+	<input id="sub" type="button" value="Submit" onclick="getdata()" >
+	</form>
+	<p>Get the value of all the elements in the form:<br >
+	<script type="text/javascript">
+		function getdata()
+		{
+		var x=document.getElementById("myForm");
+		for (var i=0;i<x.length;i++)
+  		{
+			  document.write(x.elements[i].value);
+			  document.write("<br>");
+  		}
+		}
+	</script>
+	</p>
+</body>
+</html>

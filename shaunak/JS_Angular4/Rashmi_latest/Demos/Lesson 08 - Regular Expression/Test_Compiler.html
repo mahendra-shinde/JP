@@ -1,0 +1,39 @@
+<html>
+<body>
+
+<script type="text/javascript">
+var str="Visit Pace";
+var patt=new RegExp("Microsoft");
+
+document.write("Test if we find " + patt + " in " + str + ": ")
+
+//document.write(patt.test(str))
+if (patt.test(str)==true)
+  {
+  document.write("Match found!")
+  }
+else
+  {
+  document.write("Match not found")
+  }
+
+//patt=/Pace/;
+patt.compile("Pace");
+
+document.write("<br />")
+document.write("Test if we find " + patt + " in " + str + ": ")
+
+if (patt.test(str)==true)
+  {
+  document.write("Match found!")
+  }
+else
+  {
+  document.write("Match not found")
+  }
+
+</script>
+
+</body>
+</html>
+

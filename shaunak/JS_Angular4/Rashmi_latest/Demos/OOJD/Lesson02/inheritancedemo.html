@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<script>
+    class Wallet {
+        constructor() {
+            this.amount = 0;
+        }
+        deposit(amount) {
+            this.amount += amount;
+        }
+        withdraw(amount) {
+            if (this.amount >= amount) {
+                this.amount -= amount;
+            } else {
+                throw 'Insufficient funds.';
+            }
+        }
+    }
+
+    class BoundedWallet extends Wallet {
+        constructor(maxAmount) {
+            super();
+            this.maxAmount = maxAmount;
+        }
+        deposit(amount) {
+            if (this.amount + amount > this.maxAmount) {
+                throw 'Insufficient wallet capacity';
+            }
+            super.deposit(amount);
+        } 
+    }
+
+    let myWallet = new Wallet();
+    myWallet.deposit(100);
+    let objBoundedWallet= new BoundedWallet();
+   console.log(objBoundedWallet.deposit(20000));
+    console.log(myWallet.amount);
+</script>
+
+</html>

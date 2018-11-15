@@ -1,0 +1,44 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Using functions</TITLE>
+	<script language="Javascript">
+		function evaluate() {
+			var x;
+			var y;
+			x = "document"
+			document.write("<br>assigning value of x to y using eval function");
+			y = eval(x);
+			document.write("<br>typeof(x):");
+			document.write(typeof (x) + "<br>");
+			document.write("typeof(y):");
+			document.write(typeof (y) + "<br>");
+			if (isNaN(arguments[0])) {
+				document.write("<br>Using the y object now the bgcolor is made " + arguments[0]);
+				y.bgColor = arguments[0];
+			} else {
+				document.write("<br>" + arguments[0] + " is a number this time no change to bgcolor");
+				x = parseInt(arguments[0]);
+				document.write("<br> arguments[0] converted into number using parseInt ");
+				document.write("<br>typeof(x) now is ");
+				document.write(typeof (x) + "<br>");
+			}
+
+
+		}
+	</script>
+</HEAD>
+
+<BODY>
+	<script>
+		document.write("<br>Invoking evaluate first time evaluate('rashmi')<br>");
+		evaluate("skyblue");
+		document.write("<BR>");
+		for (var i = 0; i < 50; i++)
+			document.write("-");
+		document.write("<br>Invoking evaluate again evaluate(12)<br>");
+		evaluate(12);
+	</script>
+</BODY>
+
+</HTML>

@@ -1,0 +1,14 @@
+<html>
+<head>
+<script>
+function fetchText(){
+paras=document.getElementsByTagName("p");
+alert("Paragraph along with HTML Tags : " + paras[0].innerHTML);
+alert("Paragraph Text only : " + paras[0].innerText);
+}
+</script>
+</head>
+<body>
+<p onclick="fetchText()"><b>This is a paragraph</b> </p>
+</body>
+</html>

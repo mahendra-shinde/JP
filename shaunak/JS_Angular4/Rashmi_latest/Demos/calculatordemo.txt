@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function sumNumbers(){
+            var num1= Number(document.getElementById("num1").value);
+            var num2= Number(document.getElementById("num2").value);
+            var result = num1+num2;
+            //temp = document.getElementById("result");
+            //alert(result);
+            //temp.innerText="test";
+            document.getElementById("result").value=result;
+            //document.write(result);
+        }
+
+        function calculate(){
+            var num1= Number(document.getElementById("num1").value);
+            var num2= Number(document.getElementById("num2").value);
+            var ops = document.getElementById("operation").value
+            //document.write(ops);
+            switch(ops)
+            {
+                case "Sum":
+                var result = num1+num2;
+                document.getElementById("result").value=result;
+                break;
+                case "Sub":
+                var result = num1-num2;
+                document.getElementById("result").value=result;
+                break;
+                case "Mul":
+                var result = num1*num2;
+                document.getElementById("result").value=result;
+                break;
+                case "Div":
+                if(num2==0){
+                    document.getElementById("result").value="Number cannot be divisible by 0";
+                    break;
+                }
+                var result = num1/num2;
+
+                document.getElementById("result").value=result;
+                break;
+               
+            }   
+        }
+        
+        </script>
+
+
+        Number 1:<input type="text" id= "num1" value = "3"/><br>
+        Number 2:<input type="text" id= "num2" value="3"/><br>
+        <Select id="operation"  name="ops"  ><br>
+            <option id="sum">Sum</option>
+            <option id="sub">Sub</option>
+            <option id="Mul">Mul</option>
+            <option id="Div">Div</option>
+        </Select><br>
+        <input type="button" value = "Calculate" id="ok" onclick="calculate()"/>
+        Result <input type="text" id ="result" name="result"/>
+    </body>
+</html>
+

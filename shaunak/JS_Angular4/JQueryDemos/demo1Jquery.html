@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>JQuery Demos</title>
+    <script src="scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <br />
+    <h1 align="center">
+        <p id="pt" style="position:relative">This heading can be applied to JQuery Effects</p>
+    </h1>
+    <br />
+    <h2>Click the button and See the Effects</h2>
+    <br />
+    <button id="sh">Show</button>
+    <button id="hd">Hide Me</button>
+    <button id="tsh">Toggle Show Hide</button>
+    <button id="su">Slied Up</button>
+    <button id="sd">Slied Down</button>
+    <button id="st">Slied Toggle</button>
+    <button id="fi">Fade In</button>
+    <button id="fo">Fade Out</button>
+    <button id="ft">Fade Toggle</button>
+    <button id="an">Animate</button>
+    <button id="rs">Reset</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button#hd").click(function () {
+                $("p#pt").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("button#sh").click(function () {
+                $("p#pt").show();
+            });
+        });
+        $(document).ready(function () {
+            $("button#tsh").click(function () {
+                $("p#pt").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("button#su").click(function () {
+                $("p#pt").slideUp("10000");
+            });
+        });
+        $(document).ready(function () {
+            $("button#sd").click(function () {
+                $("p#pt").slideDown("10000");
+            });
+        });
+        $(document).ready(function () {
+            $("button#st").click(function () {
+                $("p#pt").slideToggle();
+            });
+        });
+        $(document).ready(function () {
+            $("button#fi").click(function () {
+                $("p#pt").fadeIn(1000);
+            });
+        });
+        $(document).ready(function () {
+            $("button#fo").click(function () {
+                $("p#pt").fadeOut(500);
+            });
+        });
+        $(document).ready(function () {
+            $("button#ft").click(function () {
+                $("p#pt").fadeToggle();
+            });
+        });
+        $(document).ready(function () {
+            $("button#an").click(function () {
+                $("p#pt").animate({ left: "+=100px", opacity: "0.3", width: "+=30px", height: "+=50px", fontSize: "+=1em" });
+            });
+        });
+        $(document).ready(function () {
+            $("button#rs").click(function () {
+                location.reload();
+            });
+        });
+    </script>
+</body>
+
+</html>

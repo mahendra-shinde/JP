@@ -2,25 +2,26 @@
 <html >
     <head>
 	 <script type="text/javascript">
+	 var value=true;
 	 function validateForm()
 	 {
 		var x=document.forms["myform"]["eid"].value;
 				if (x<0)
 				{
 					alert("Employe number should be greater than 0");
-					return false;
+					value=false;
 				}						
 				if (x.length < 6)
 				{
 						alert("Number must be 6 digit");
-						return false;
+						value=false;
 				}
 							
 				var y=parseInt(document.forms["myform"]["mpt"].value);
 				if (y<0 || y>100)
 				{
 				alert("MPT marks cant be less than zero and less than 100");
-				return false;
+				value=false;
 				}		
 				
 				var z=parseInt(document.forms["myform"]["mtt"].value);
@@ -28,7 +29,7 @@
 				if (z<0 || z>100)
 				{
 					alert("MTT marks cant be less than zero and less than 100");
-					return false;
+					value=false;
 				}		
 				
 				var p=parseInt(document.forms["myform"]["assignment"].value);
@@ -36,7 +37,7 @@
 				if (p<0 || p>100)
 				{
 					alert("Assignment marks cant be less than zero and less than 100");
-					return false;
+					value=false;
 				}		
 	 }
 
@@ -70,43 +71,49 @@
 					var option = document.createElement("option");
 					option.value="C#";
 					option.text="C#";
+					document.getElementById("modules").appendChild(option);
+					var option = document.createElement("option");
+					option.value="ADO.NET";
+					option.text="ADO.NET";
 					document.getElementById("modules").appendChild(option);	
+					var option = document.createElement("option");
+					option.value="ASP.NET";
+					option.text="ASP.NET";
+					document.getElementById("modules").appendChild(option);
 			}
 			
 		}
 
 		function calculate_marks()
 			{
-			var val=true;	
-			var val=validateForm();
-			alert(val);
-			if (val==true)
+			value=true;	
+			validateForm();
+						if (value==true)
 			{
+				
 				var y=parseInt(document.forms["myform"]["mpt"].value);
 				var z=parseInt(document.forms["myform"]["mtt"].value);
 				var p=parseInt(document.forms["myform"]["assignment"].value);
-				var sum=(y*.015)+(z*0.15)+(p*0.5);
+				var sum=(y*.015)+(z*0.15)+(p*0.7);
 				alert("Total marks:" + sum);	
 			}
 		}
-	
-		
-
 </script>
 	 
         <title>Form</title>
     </head>
     <body>
-        <form id="myform" >
-               <center>Enter Employee number : <input type="text" id="eid" name="name" maxlength=6 required /></center><br/>
+		<form id="myform" style="background-color:#E6E6FA">
+			   
+			<center>Enter Employee number : <input type="text" id="eid" name="name" maxlength=6 required /></center><br/>
                <center> Employee name : <input type="text" name="name" id="ename" maxlength=30 required /></center><br/> 
 			   <center>Choose domain : <select id="domain" onChange="populatemodules()">
 								<option value="SELECT">Select option</option>
 								<option value="J2EE">J2EE</option>
 								<option value=".NET">.NET</option>
-								</select></center>
+								</select></center><br/>
 				<center>Choose modules : <select id="modules">
-								</select></center>
+								</select></center><br/>
                <center>Enter MPT Marks : <input type="text" name="mpt" maxlength=3 required/></center><br/>
                <center>Enter MTT Marks : <input type="text" name="mtt" maxlength=3  required/></center><br/>
                <center>Enter Assignment Marks : <input type="text" name="assignment" maxlength=3 required/></center><br/>

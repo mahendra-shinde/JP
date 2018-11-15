@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<TITLE>Working with Document Object</TITLE>
+<script language="javascript">
+	function showObjects()
+	{
+		alert("Total Anchors:"+document.anchors.length+"\n"+"Total Links:"+document.links.length+"\nTotal Forms:"+document.forms.length)
+	}
+	function doit()
+	{
+		var nw=window.open("","","width=250,height=100,title='Working with Document Object'")
+		nw.document.write("Button Name:"+document.form1.b1.name+"<br>")
+		nw.document.write("Button Type:"+document.form1.b1.type+"<br>")
+		nw.document.write("Button Value:"+document.form1.b1.value+"<br>")
+		nw.document.bgColor="gray"
+		nw.document.fgColor="white"
+		//nw.document.title="Working with Document Object"
+	}
+</script>
+</HEAD>
+<BODY onload="showObjects()">
+	<h1>Document Object Example</h1>
+	<h3>Anchor</h3>
+	<a name="section1"> </a>
+	<a href="#section2">Click here to go to section 1</a>
+	<script language="javascript">
+		for(i=0;i<25;i++)
+		{
+			document.write("<br>");
+		}
+	</script>
+	<h3>Another Anchor</h3>
+	<a name="section2"> </a>
+	This is the section 1 of the document.<br>
+	If you want to see the first page...then<br>
+	Plase click on the following link<br><br>
+
+	<a href="#section1">TOP</a>
+	<br>Want to know more about the form of this document
+	<form name="form1">
+		<input type="button" name="b1" value="Click here" onclick="doit()">
+	</form>
+</BODY>
+</HTML>

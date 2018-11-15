@@ -4,7 +4,29 @@
 	</head>
 <body>
 <script>
-document.write("Baniye ka Dimag and Miyanbhai ka Daring");
+function printArray(a) 
+{
+     var len = a.length, i = 0;
+     if (len == 0)
+        console.log("Empty Array");
+     else 
+     {
+         do 
+         {
+             console.log(a[i]);
+         } while (++i < len);
+     }
+}
+console.log(printArray(5));
+
+function tail(o) 
+{ 
+    for (; o.next; o = o.next) ;
+    return o;
+}
+console.log(tail(5));
+
+
 </script>
 </body>	
 </html>

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+
+</HEAD>
+<BODY>
+<SCRIPT TYPE="text/javascript">
+  var re = new RegExp("@[a-z]+");
+  var teststring="mailme@helpdesk.com";
+  if (teststring.match(re)) {
+    document.write("<br>valid email id---->"+teststring);
+  } else {
+    document.write("<br>invalid email id---->"+teststring);
+  }
+ var re = new RegExp("@[a-z]+");
+  var teststring="mailmeathelpdesk.com";
+  if (teststring.match(re)) {
+    document.write("<br>valid email id---->"+teststring);
+  } else {
+    document.write("<br>invalid email id---->"+teststring);
+  }
+
+  var re=/over\Sbyte/;
+  var teststring="over_byte";
+  if(teststring.match(re))
+	document.write("<br>Good");
+</SCRIPT>
+</BODY>
+</HTML>
+
