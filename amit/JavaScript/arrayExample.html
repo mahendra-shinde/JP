@@ -1,0 +1,46 @@
+<html>
+
+
+<head>
+        <title>
+
+        </title>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        var a = new Array("Amit", "sunil", "Rohit");
+        document.write("The length of array" +a.length+"<br>");
+
+            var arrjoin = a.join(",");
+            document.write("====================================")
+        document.write("<br>")
+
+        var arrslice = a.slice(1,1);
+        document.write("Slice Example "+arrslice);
+        document.write("<br>");
+        document.write("====================================")
+
+        var arrconcat = a.concat(arrslice);
+        document.write("<br>");
+        document.write(arrconcat);
+        
+        document.write("<br>");
+        document.write("====================================")
+
+        b = a[2];
+        document.write(b);
+
+        arr = new Array(55,44,77,50,10);
+        sortary = arr.sort();
+        document.write("<br>");
+        document.write("=======================================");
+        document.write(sortary);
+    
+    </script>
+</body>
+
+</html>
