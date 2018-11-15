@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Array Demo
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var arr=new Array("Shaunak","Viral","Chandra");
+        document.write("The Length of this Array is" + arr.length + "<br>")
+        document.write("**********************************************")
+        var arrjoin=arr.join(",");
+        document.write("<br>")
+        document.write(arrjoin);
+        var arrslice=arr.slice(0,2);
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        document.write(arrslice);
+        var arrcon=arr.concat(arrslice);
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        document.write(arrcon)
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        document.write(arr.sort());
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        document.write(arr.reverse());
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        var arrslice=arr.slice(-2,3);
+        document.write("<br>")
+        document.write("**********************************************")
+        document.write("<br>")
+        document.write(arrslice);
+        </script>
+    </body>
+</html>
