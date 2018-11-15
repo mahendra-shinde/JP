@@ -1,0 +1,49 @@
+<html>
+
+    <title>
+        Select Day Button
+    </title>
+    <head>
+        <script type="text/javascript">
+        function valWeekDay(a){
+
+                switch (a){
+                    
+                    case 'Mon':
+                    document.getElementById("para1").innerHTML=" you clicked Monday";
+                        break;
+                    case "Tue":
+                    document.getElementById("para1").innerHTML=" you clicked Tuesday";
+                    break;
+                    case "Wed":
+                    document.getElementById("para1").innerHTML=" you clicked Wednesday";
+                    break;
+                    case "Thu":
+                    document.getElementById("para1").innerHTML=" you clicked Thursday";
+                    break;
+                    case "Fri":
+                    document.getElementById("para1").innerHTML=" you clicked Friday";
+                    break;
+                    case "Sat":
+                    document.getElementById("para1").innerHTML=" you clicked Saturday";
+                    break;
+                    case "Sun":
+                    document.getElementById("para1").innerHTML=" you clicked Sunday";
+                    break;
+                }
+        }
+        </script>
+    </head>
+    <body>
+
+        <input type="button" value="Monday" id="Mon" onclick="valWeekDay('Mon')">
+        <input type="button" value="Tuesday" id="Tue" onclick="valWeekDay('Tue')">
+        <input type="button" value="Wednesday" id="Wed" onclick="valWeekDay('Wed')">
+        <input type="button" value="Thursday" id="Thu" onclick="valWeekDay('Thu')">
+        <input type="button" value="Friday" id="Fri" onclick="valWeekDay('Fri')">
+        <input type="button" value="Saturday" id="Sat" onclick="valWeekDay('Sat')">
+        <input type="button" value="Sunday" id="Sun" onclick="valWeekDay('Sun')">
+        <p id="para1"></p>
+    </body>
+
+</html>

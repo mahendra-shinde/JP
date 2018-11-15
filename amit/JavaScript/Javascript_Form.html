@@ -1,0 +1,310 @@
+<!Doctype html>
+<html>
+<title>Registration Form</title>
+<head>
+
+    <style type="text/css">
+
+    .childTable{
+
+
+        width: 800px;
+        height: 500px;
+        padding: 25px;
+        margin: auto;
+        border:4pt;
+        color: blue;
+        background-color: aqua;
+        
+
+    }
+
+    
+
+    .parentTable{
+
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin: auto;
+
+         border:4pt;
+
+         color: blueviolet;
+
+         background-color: chocolate;
+
+         
+
+    }
+
+    header{
+        color: red;
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin: auto;
+    }
+
+    p{
+        color: red;
+    }
+    
+    </style>
+    <script type="text/javascript">
+        
+         var fullForm=true;
+         
+
+         
+
+         function showModule(){
+
+             //var suv = document.getElementById("module");
+
+                //len = suv.length();
+               // document.write(len);
+               // for(i=0;i<len;i++){
+               //     suv.remove(0);
+               // }
+
+            var mod = document.getElementById("domain").value;
+
+            if (mod =="JEE"){
+
+                var suv = document.getElementById("module");
+                    console.log(suv);
+            len1 = suv.length;
+            console.log(len1);
+                for(i=1;i<len1;i++){
+                       suv.remove(1);
+              }
+
+                opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="Core-Java";
+                opt.text="Core-Java";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="Servelet-JSP";
+                opt.text="Servelet-JSP";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                 opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="Spring";
+                opt.text="Spring";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+            }else if(mod ==".NET"){
+
+                 var suv = document.getElementById("module");
+                    console.log(suv);
+            len1 = suv.length;
+            console.log(len1);
+                for(i=1;i<len1;i++){
+                       suv.remove(1);
+              }
+               
+
+                 opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="C#";
+                opt.text="C#";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="ADO.NET";
+                opt.text="ADO.NET";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                 opt = document.createElement("option");
+                opt.id="defMod1";
+                opt.value="ASP.ENT";
+                opt.text="ASP.ENT";
+                
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+            }
+
+            
+
+         }
+
+         function valEmpNoLen(){
+                var empNoL = document.getElementById("eno").value;
+               // document.write(empNoL);
+                if (((empNoL.length >6) || (empNoL.length==0)) ){
+                    
+                    document.getElementById("para1").innerHTML="*Invalid Employee No"
+                   // return false;
+                 //  alert("Invalid Employee No");
+                   fullForm=false
+                }
+            }
+
+            
+         function valEmpNameLen(){
+                var empNoN = document.getElementById("ename").value;
+               // document.write(empNoL);
+                if ((empNoN.length >30) || (empNoN.length ==0)){
+                    
+                    document.getElementById("para2").innerHTML="*Invalid Employee Name"
+                   // return false;
+                  // alert("Invalid Employee Name");
+                   fullForm=false
+                }
+            }
+
+            function negativeMarksValidationMTT(){
+            bb = Number(document.getElementById("mttm").value);
+            if (bb <=0){
+                document.getElementById("para6").innerHTML="*MTT marks entered as 0 or less than 0"
+                //alert("MPP marks entered as 0 or less than 0");
+                //return false;
+                fullForm=false
+            }
+
+
+         }
+
+         function valDefaultDomain(){
+            bb = document.getElementById("module").value;
+            if (bb="defMod"){
+                document.getElementById("para3").innerHTML="*Invalid option selected for Domain";
+              //  alert("Invalid option selected for Domain");
+                //return false;
+                fullForm=false
+            }
+
+           
+
+         }
+
+          function valDefaultModule(){
+            bb = document.getElementById("domain").value;
+            if (bb="defMod1"){
+              // alert("Invalid option selected for Module");
+                document.getElementById("para4").innerHTML="*Invalid option selected for Module"
+                //return false;
+                fullForm=false
+            }
+
+          }
+
+
+         function negativeMarksValidationAssn(){
+            bb = Number(document.getElementById("assm").value);
+            
+            if ((bb <=0) || (bb.length=0)){
+
+                    document.getElementById("para7").innerHTML="*Assignment marks entered as 0 or less than 0"
+                //alert("Assignment marks entered as 0 or less than 0");
+                //return false;
+                fullForm=false
+            }
+
+
+         }
+
+         function addAllMarks(){
+             validateForm();
+             if (fullForm){
+
+                bb = Number(document.getElementById("assm").value);
+                aa = Number(document.getElementById("mptm").value);
+                cc = Number(document.getElementById("mttm").value);
+                alert(aa+bb+cc);
+                
+             }
+            
+            
+            
+         }
+
+         function negativeMarksValidationMPT(){
+            aa = Number(document.getElementById("mptm").value);
+            if (aa <=0){
+               // alert("MPT marks entered as 0 or less than 0")
+               document.getElementById("para5").innerHTML="*MPT marks entered as 0 or less than 0"
+                //return false;
+                fullForm=false
+            }
+
+
+         }
+
+         function validateForm(){
+
+            valEmpNoLen();
+            valEmpNameLen();           
+            valDefaultDomain(); 
+            valDefaultModule();
+            negativeMarksValidationMTT();
+            negativeMarksValidationMPT();
+            negativeMarksValidationAssn();
+        
+         }
+
+    </script>
+</head>
+<body>
+    <table class="parentTable">
+        <tr><td></td><td>
+        <form name="myForm" action="" method="post">
+    <table border=0 class="childTable">
+            <tr><th colspan="2"><header><h2><u>Marks Calculator</u></h2></header></th></tr>
+        <tr><td>Enter Employee Number:</td><td><input type="number" id="eno" maxlength="6"> </td><td><p id="para1"></p></td></tr>
+        <tr><td>Enter Employee Name:</td><td><input type="text" id="ename" maxlength="40"></td><td><p id="para2"></p></td></tr>
+        <tr>
+            <td>Choose Domain:</td>
+            <td>
+                <select id="domain" name = "domain" onChange="showModule()">
+                        <option id="defMod" value="defMod">--Select Domain--</option>
+                    <option id="jee">JEE</option>
+                    <option id="net">.NET</option>
+                </select>
+            </td>
+            <td><p id="para3"></p></td>
+            </tr>
+        </tr>
+        <tr><td>Choose Module:</td><td>
+                <select id="module" name = "module">
+                        <option id="defMod1" value="defMod1">--Select-- </option>
+                    </select>
+        </td>
+        <td><p id="para4"></p></td>
+    </tr>
+        <tr>
+            <td>Enter MPT Marks:</td>
+            <td><input type="number" id="mptm"> </td>
+            <td><p id="para5"></p></td>
+        </tr>
+        <tr><td>Enter MTT Marks:</td><td><input type="number" id="mttm"> </td><td><p id="para6"></p></td></tr>
+        <tr>
+            <td>Enter Assignment Marks:</td>
+            <td><input type="number" id="assm"> </td>
+            <td><p id="para7"></p></td>
+        </tr>
+        <tr><td rowspan="2"><input type="button" id="submit"  onclick="addAllMarks()" value="Calculate Module Score"></td></tr>
+        
+    </table>
+    </form>
+</td><td></td></tr>
+    </table>
+</body>
+</html>
