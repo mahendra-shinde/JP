@@ -1,310 +1,375 @@
 <!Doctype html>
 <html>
 <title>Registration Form</title>
+
 <head>
 
     <style type="text/css">
+        .childTable {
 
-    .childTable{
+
+            width: 800px;
+            height: 500px;
+            padding: 25px;
+            margin: auto;
+            border: 4pt;
+            color: blue;
+            background-color: aqua;
 
 
-        width: 800px;
-        height: 500px;
-        padding: 25px;
-        margin: auto;
-        border:4pt;
-        color: blue;
-        background-color: aqua;
-        
+        }
 
-    }
 
-    
 
-    .parentTable{
+        .parentTable {
 
-        width: auto;
-        height: auto;
-        padding: auto;
-        margin: auto;
+            width: auto;
+            height: auto;
+            padding: auto;
+            margin: auto;
 
-         border:4pt;
+            border: 4pt;
 
-         color: blueviolet;
+            color: blueviolet;
 
-         background-color: chocolate;
+            background-color: chocolate;
 
-         
 
-    }
 
-    header{
-        color: red;
-        width: auto;
-        height: auto;
-        padding: auto;
-        margin: auto;
-    }
+        }
 
-    p{
-        color: red;
-    }
-    
+        header {
+            color: red;
+            width: auto;
+            height: auto;
+            padding: auto;
+            margin: auto;
+        }
+
+        p {
+            color: red;
+        }
     </style>
     <script type="text/javascript">
-        
-         var fullForm=true;
-         
 
-         
+        var fullForm = true;
 
-         function showModule(){
 
-             //var suv = document.getElementById("module");
 
-                //len = suv.length();
-               // document.write(len);
-               // for(i=0;i<len;i++){
-               //     suv.remove(0);
-               // }
+
+        function showModule() {
+
+            //var suv = document.getElementById("module");
+
+            //len = suv.length();
+            // document.write(len);
+            // for(i=0;i<len;i++){
+            //     suv.remove(0);
+            // }
 
             var mod = document.getElementById("domain").value;
 
-            if (mod =="JEE"){
+            if (mod == "JEE") {
 
                 var suv = document.getElementById("module");
-                    console.log(suv);
-            len1 = suv.length;
-            console.log(len1);
-                for(i=1;i<len1;i++){
-                       suv.remove(1);
-              }
-
-                opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="Core-Java";
-                opt.text="Core-Java";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-                opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="Servelet-JSP";
-                opt.text="Servelet-JSP";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-                 opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="Spring";
-                opt.text="Spring";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-            }else if(mod ==".NET"){
-
-                 var suv = document.getElementById("module");
-                    console.log(suv);
-            len1 = suv.length;
-            console.log(len1);
-                for(i=1;i<len1;i++){
-                       suv.remove(1);
-              }
-               
-
-                 opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="C#";
-                opt.text="C#";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-                opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="ADO.NET";
-                opt.text="ADO.NET";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-                 opt = document.createElement("option");
-                opt.id="defMod1";
-                opt.value="ASP.ENT";
-                opt.text="ASP.ENT";
-                
-                var suv = document.getElementById("module");
-                suv.appendChild(opt);
-
-            }
-
-            
-
-         }
-
-         function valEmpNoLen(){
-                var empNoL = document.getElementById("eno").value;
-               // document.write(empNoL);
-                if (((empNoL.length >6) || (empNoL.length==0)) ){
-                    
-                    document.getElementById("para1").innerHTML="*Invalid Employee No"
-                   // return false;
-                 //  alert("Invalid Employee No");
-                   fullForm=false
+                //console.log(suv);
+                len1 = suv.length;
+               // console.log(len1);
+                for (i = 1; i < len1; i++) {
+                    suv.remove(1);
                 }
-            }
 
-            
-         function valEmpNameLen(){
-                var empNoN = document.getElementById("ename").value;
-               // document.write(empNoL);
-                if ((empNoN.length >30) || (empNoN.length ==0)){
-                    
-                    document.getElementById("para2").innerHTML="*Invalid Employee Name"
-                   // return false;
-                  // alert("Invalid Employee Name");
-                   fullForm=false
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "Core-Java";
+                opt.text = "Core-Java";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "Servelet-JSP";
+                opt.text = "Servelet-JSP";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "Spring";
+                opt.text = "Spring";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+            } else if (mod == ".NET") {
+
+                var suv = document.getElementById("module");
+                console.log(suv);
+                len1 = suv.length;
+                console.log(len1);
+                for (i = 1; i < len1; i++) {
+                    suv.remove(1);
                 }
+
+
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "C#";
+                opt.text = "C#";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "ADO.NET";
+                opt.text = "ADO.NET";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
+                opt = document.createElement("option");
+                opt.id = "defMod1";
+                opt.value = "ASP.ENT";
+                opt.text = "ASP.ENT";
+
+                var suv = document.getElementById("module");
+                suv.appendChild(opt);
+
             }
 
-            function negativeMarksValidationMTT(){
+
+
+        }
+
+        function valEmpNoLen() {
+            var empNoL = document.getElementById("eno").value;
+            // document.write(empNoL);
+            if (((empNoL.length > 6) || (empNoL.length == 0))) {
+
+                document.getElementById("para1").innerHTML = "*Invalid Employee No"
+                // return false;
+                //  alert("Invalid Employee No");
+                fullForm = false
+            }
+
+            //console.log("value of flag is in EmpNO"+fullForm);
+        }
+
+
+        function valEmpNameLen() {
+            var empNoN = document.getElementById("ename").value;
+            // document.write(empNoL);
+            if ((empNoN.length > 30) || (empNoN.length == 0)) {
+
+                document.getElementById("para2").innerHTML = "*Invalid Employee Name"
+                // return false;
+                // alert("Invalid Employee Name");
+                fullForm = false
+            }
+
+            //console.log("value of flag is in EmpName"+fullForm);
+        }
+
+        function negativeMarksValidationMTT() {
             bb = Number(document.getElementById("mttm").value);
-            if (bb <=0){
-                document.getElementById("para6").innerHTML="*MTT marks entered as 0 or less than 0"
+            if (bb <= 0) {
+                document.getElementById("para6").innerHTML = "*MTT marks entered as 0 or less than 0"
                 //alert("MPP marks entered as 0 or less than 0");
                 //return false;
-                fullForm=false
+                fullForm = false
             }
 
+            //console.log("value of flag is in MTT"+fullForm);
 
-         }
 
-         function valDefaultDomain(){
+        }
+
+        function valDefaultDomain() {
             bb = document.getElementById("module").value;
-            if (bb="defMod"){
-                document.getElementById("para3").innerHTML="*Invalid option selected for Domain";
-              //  alert("Invalid option selected for Domain");
+            //console.log("module--> "+bb);
+            if (bb == "defMod1") {
+                document.getElementById("para3").innerHTML = "*Invalid option selected for Domain";
+                //  alert("Invalid option selected for Domain");
                 //return false;
-                fullForm=false
+                fullForm = false
             }
 
-           
+            //console.log("value of flag is in Domain"+fullForm);
 
-         }
+        }
 
-          function valDefaultModule(){
+        function valDefaultModule() {
             bb = document.getElementById("domain").value;
-            if (bb="defMod1"){
-              // alert("Invalid option selected for Module");
-                document.getElementById("para4").innerHTML="*Invalid option selected for Module"
+            //console.log("domain--> "+bb);
+            if (bb == "defMod") {
+                // alert("Invalid option selected for Module");
+                document.getElementById("para4").innerHTML = "*Invalid option selected for Module"
                 //return false;
-                fullForm=false
+                fullForm = false
             }
 
-          }
+            //console.log("value of flag is in Module "+fullForm);
+
+        }
 
 
-         function negativeMarksValidationAssn(){
+        function negativeMarksValidationAssn() {
             bb = Number(document.getElementById("assm").value);
-            
-            if ((bb <=0) || (bb.length=0)){
 
-                    document.getElementById("para7").innerHTML="*Assignment marks entered as 0 or less than 0"
+            if ((bb <= 0) || (bb.length = 0)) {
+
+                document.getElementById("para7").innerHTML = "*Assignment marks entered as 0 or less than 0"
                 //alert("Assignment marks entered as 0 or less than 0");
                 //return false;
-                fullForm=false
+                fullForm = false
             }
 
+            //console.log("value of flag is in ass "+fullForm);
 
-         }
 
-         function addAllMarks(){
-             validateForm();
-             if (fullForm){
+        }
+
+        function addAllMarks() {
+            //console.log("before "+fullForm);
+            validateForm();
+            //console.log("after "+fullForm);
+            //console.log(fullForm);
+            if (fullForm) {
 
                 bb = Number(document.getElementById("assm").value);
                 aa = Number(document.getElementById("mptm").value);
                 cc = Number(document.getElementById("mttm").value);
-                alert(aa+bb+cc);
-                
-             }
-            
-            
-            
-         }
+                alert(aa + bb + cc);
 
-         function negativeMarksValidationMPT(){
-            aa = Number(document.getElementById("mptm").value);
-            if (aa <=0){
-               // alert("MPT marks entered as 0 or less than 0")
-               document.getElementById("para5").innerHTML="*MPT marks entered as 0 or less than 0"
-                //return false;
-                fullForm=false
             }
 
 
-         }
 
-         function validateForm(){
+        }
+
+        function negativeMarksValidationMPT() {
+            aa = Number(document.getElementById("mptm").value);
+            if (aa <= 0) {
+                // alert("MPT marks entered as 0 or less than 0")
+                document.getElementById("para5").innerHTML = "*MPT marks entered as 0 or less than 0"
+                //return false;
+                fullForm = false
+            }
+
+
+        }
+
+        function setBlankEditBox(abc) {
+                // alert("MPT marks entered as 0 or less than 0")
+                document.getElementById(abc).innerHTML = "";
+                //return false;
+               
+            }
+
+        
+
+        function validateForm() {
 
             valEmpNoLen();
-            valEmpNameLen();           
-            valDefaultDomain(); 
+            valEmpNameLen();
+            valDefaultDomain();
             valDefaultModule();
             negativeMarksValidationMTT();
             negativeMarksValidationMPT();
             negativeMarksValidationAssn();
-        
-         }
+
+        }
 
     </script>
 </head>
+
 <body>
     <table class="parentTable">
-        <tr><td></td><td>
-        <form name="myForm" action="" method="post">
-    <table border=0 class="childTable">
-            <tr><th colspan="2"><header><h2><u>Marks Calculator</u></h2></header></th></tr>
-        <tr><td>Enter Employee Number:</td><td><input type="number" id="eno" maxlength="6"> </td><td><p id="para1"></p></td></tr>
-        <tr><td>Enter Employee Name:</td><td><input type="text" id="ename" maxlength="40"></td><td><p id="para2"></p></td></tr>
         <tr>
-            <td>Choose Domain:</td>
+            <td></td>
             <td>
-                <select id="domain" name = "domain" onChange="showModule()">
-                        <option id="defMod" value="defMod">--Select Domain--</option>
-                    <option id="jee">JEE</option>
-                    <option id="net">.NET</option>
+                <form name="myForm" action="" method="post">
+                    <table border=0 class="childTable">
+                        <tr>
+                            <th colspan="2">
+                                <header>
+                                    <h2><u>Marks Calculator</u></h2>
+                                </header>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Enter Employee Number:</td>
+                            <td><input type="number" id="eno" maxlength="6" onfocus="setBlankEditBox('para1')"> </td>
+                            <td>
+                                <p id="para1"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Employee Name:</td>
+                            <td><input type="text" id="ename" maxlength="40"  onfocus="setBlankEditBox('para2')"></td>
+                            <td>
+                                <p id="para2"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Choose Domain:</td>
+                            <td>
+                                <select id="domain" name="domain" onChange="showModule()" onfocus="setBlankEditBox('para3')">
+                                    <option id="defMod" value="defMod">--Select Domain--</option>
+                                    <option id="jee">JEE</option>
+                                    <option id="net">.NET</option>
+                                </select>
+                            </td>
+                            <td>
+                                <p id="para3"></p>
+                            </td>
+                        </tr>
+        </tr>
+        <tr>
+            <td>Choose Module:</td>
+            <td>
+                <select id="module" name="module" onfocus="setBlankEditBox('para4')">
+                    <option id="defMod1" value="defMod1">--Select-- </option>
                 </select>
             </td>
-            <td><p id="para3"></p></td>
-            </tr>
+            <td>
+                <p id="para4"></p>
+            </td>
         </tr>
-        <tr><td>Choose Module:</td><td>
-                <select id="module" name = "module">
-                        <option id="defMod1" value="defMod1">--Select-- </option>
-                    </select>
-        </td>
-        <td><p id="para4"></p></td>
-    </tr>
         <tr>
             <td>Enter MPT Marks:</td>
-            <td><input type="number" id="mptm"> </td>
-            <td><p id="para5"></p></td>
+            <td><input type="number" id="mptm"  onfocus="setBlankEditBox('para5')"> </td>
+            <td>
+                <p id="para5"></p>
+            </td>
         </tr>
-        <tr><td>Enter MTT Marks:</td><td><input type="number" id="mttm"> </td><td><p id="para6"></p></td></tr>
+        <tr>
+            <td>Enter MTT Marks:</td>
+            <td><input type="number" id="mttm"  onfocus="setBlankEditBox('para6')"> </td>
+            <td>
+                <p id="para6"></p>
+            </td>
+        </tr>
         <tr>
             <td>Enter Assignment Marks:</td>
-            <td><input type="number" id="assm"> </td>
-            <td><p id="para7"></p></td>
+            <td><input type="number" id="assm"  onfocus="setBlankEditBox('para7')"> </td>
+            <td>
+                <p id="para7"></p>
+            </td>
         </tr>
-        <tr><td rowspan="2"><input type="button" id="submit"  onclick="addAllMarks()" value="Calculate Module Score"></td></tr>
-        
+        <tr>
+            <td rowspan="2"><input type="button" id="submit" onclick="addAllMarks()" value="Calculate Module Score"></td>
+        </tr>
+
     </table>
     </form>
-</td><td></td></tr>
+    </td>
+    <td></td>
+    </tr>
     </table>
 </body>
+
 </html>
