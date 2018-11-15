@@ -1,0 +1,30 @@
+<html>
+
+<body>
+	<script type="text/javascript">
+		document.write("For loop using Continue<br><br>");
+
+		var i = 0;
+		for (i = 0; i <= 10; i++) {
+			if (i == 3) {
+				continue;
+			}
+			document.write("The number is " + i);
+			document.write("<br>");
+		}
+
+		document.write("<br><br><br><br>")
+		document.write("For loop using Break<br><br>");
+		for (i = 0; i < 10; i++) {
+			if (i == 3)
+				break;
+			document.write("The number is " + i);
+			document.write("<br>");
+		}
+	</script>
+	<!--
+<p>Explanation: The loop will break the current loop and continue with the next value when i=3.</p>
+-->
+</body>
+
+</html>
