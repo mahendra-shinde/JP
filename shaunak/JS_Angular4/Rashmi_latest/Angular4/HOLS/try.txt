@@ -1,0 +1,53 @@
+import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model/employee';
+
+@Component({
+  selector: 'app-employee',
+  templateUrl: './employee.component.html',
+  styleUrls: ['./employee.component.css']
+})
+export class EmployeeComponent implements OnInit {
+
+  name="Employee Information";
+
+    firstName: string = 'Rashmi';
+    lastName: string = 'Pawaskar';
+    gender: string = 'Female';
+    age: number = 30;
+    
+   ShowFaculty: boolean = true;
+   Faculty: string = "rashmi Pawaskar";
+
+   Subjects: string[] = ["MS.NET", "Java", "SharePoint"]
+
+employees: any[] = [
+    {
+        code: 'emp101', name: 'Rashmi', gender: 'Female',
+        annualSalary: 5500, dateOfBirth: '25/6/1985'
+    },
+    {
+        code: 'emp102', name: 'Anushka', gender: 'Female',
+        annualSalary: 5700.95, dateOfBirth: '9/6/1982'
+    },
+    {
+      code: 'emp103', name: 'Parth', gender: 'Male',
+      annualSalary: 5700.95, dateOfBirth: '9/6/1982'
+  }
+]; 
+
+
+
+Duration: number = 30;
+
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  getFullName(): string {
+    return this.firstName + ' ' + this.lastName;
+}
+
+emp: Employee = new Employee(1,"Emp1",10000) ;
+}

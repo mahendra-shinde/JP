@@ -1,0 +1,212 @@
+export class emp {
+    id: number;
+    name: string;
+    gender: string;
+    email?: string;
+    phoneNumber?: number;
+    contactPreference: string;
+    dateOfBirth: Date;
+    department: string;
+    isActive: boolean;
+    photoPath?: string;
+}
+==========================================
+
+employees: emp[] = [
+    {
+      id: 1,
+      name: 'Rashmi',
+      gender: 'FeMale',
+      contactPreference: 'Email',
+      email: 'rashmi@gmail.com',
+      dateOfBirth: new Date('10/25/1988'),
+      department: 'IT',
+      isActive: true,
+      photoPath: 'assets/images/anu.png'
+    },
+    {
+      id: 2,
+      name: 'Anushka',
+      gender: 'Female',
+      contactPreference: 'Phone',
+      phoneNumber: 2345978640,
+      dateOfBirth: new Date('11/20/1979'),
+      department: 'HR',
+      isActive: true,
+      photoPath: 'assets/images/anu.png'
+    },
+    {
+      id: 3,
+      name: 'Parth',
+      gender: 'Male',
+      contactPreference: 'Phone',
+      phoneNumber: 5432978640,
+      dateOfBirth: new Date('3/25/1976'),
+      department: 'IT',
+      isActive: false,
+      photoPath: 'assets/images/parth.png'
+    },
+  ];
+
+
+==============================================
+
+<!-- <div  *ngFor="let employee of employees">
+    <div >
+      <h3 >{{employee.name}}</h3>
+    </div>
+    <div >
+  
+      <div >
+  
+        <div >
+  
+          <div >
+            <img class="imageClass" [src]="employee.photoPath" />
+          </div>
+          <div >
+  
+            <div >
+              <div class="col-xs-6">
+                Gender
+              </div>
+              <div >
+                : {{employee.gender}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Date of Birth
+              </div>
+              <div >
+                : {{employee.dateOfBirth | date}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Contact Preference
+              </div>
+              <div >
+                : {{employee.contactPreference}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Phone
+              </div>
+              <div >
+                : {{employee.phoneNumber}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Email
+              </div>
+              <div >
+                : {{employee.email}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Department
+              </div>
+              <div >
+                : {{employee.department}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Is Active
+              </div>
+              <div >
+                : {{employee.isActive}}
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+   <div class="panel panel-primary" *ngFor="let employee of employees">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{employee.name}}</h3>
+    </div>
+    <div class="panel-body">
+  
+      <div class="col-xs-10">
+  
+        <div class="row vertical-align">
+  
+          <div class="col-xs-4">
+            <img class="imageClass" [src]="employee.photoPath" />
+          </div>
+          <div class="col-xs-8">
+  
+            <div class="row">
+              <div class="col-xs-6">
+                Gender
+              </div>
+              <div class="col-xs-6">
+                : {{employee.gender}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Date of Birth
+              </div>
+              <div class="col-xs-6">
+                : {{employee.dateOfBirth | date}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Contact Preference
+              </div>
+              <div class="col-xs-6">
+                : {{employee.contactPreference}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Phone
+              </div>
+              <div class="col-xs-6">
+                : {{employee.phoneNumber}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Email
+              </div>
+              <div class="col-xs-6">
+                : {{employee.email}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Department
+              </div>
+              <div class="col-xs-6">
+                : {{employee.department}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Is Active
+              </div>
+              <div class="col-xs-6">
+                : {{employee.isActive}}
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  

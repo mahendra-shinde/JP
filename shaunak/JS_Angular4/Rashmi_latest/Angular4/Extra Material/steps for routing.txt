@@ -1,0 +1,48 @@
+Routing Steps
+step1 : Create an route array inside the AppModule
+step2:
+ex:
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'employeeslist', component: EmployeeInfoComponent },
+  { path: 'employees', component: EmployeeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponentComponent }
+];
+
+step3:Routes is an class which needs to be imported from @angular/router
+
+
+step 4: Need to register the created routes as an array to RouterModule inside imports section of AppModule and RouterModule should be imported from @angular/router.
+import { RouterModule, Routes } from '@angular/router';
+
+step5:
+inside import section import the RouterModule
+ex:
+
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
+    AppRoutingModule
+  ],
+
+step6:
+in app.component.html
+Define the Nav bars and router-outlet
+
+<div style="padding:5px">
+  <ul class="nav nav-tabs">
+      <li routerLinkActive="active">
+          <a routerLink="home">Home</a>
+      </li>
+      <li routerLinkActive="active">
+          <a routerLink="employeeslist">Employees List</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="employees">Employees</a>
+    </li>
+  </ul>
+  <br/>
+  <router-outlet></router-outlet>
+</div>

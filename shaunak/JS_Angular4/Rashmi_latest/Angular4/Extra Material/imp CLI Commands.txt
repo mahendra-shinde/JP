@@ -1,0 +1,30 @@
+ng serve will compile build nd run both
+
+
+ng build compile nd build 
+
+npm start  nd ng serve same
+
+npm run build nd ng build is same 
+
+npm install webpack-cli webpack --save-dev
+
+web pack -bundling or packaging
+
+
+npm start 
+
+ng serve 
+
+
+npm install bootstrap @3 --save -to install bootstrap in angular project
+ng g c Employee - to create an Employee component 
+
+ng g p empgengerfilter -to create an Pipe 
+ng g class Employee - to create an class 
+ng g i IEmp - to create an inyterface
+
+
+
+
+
