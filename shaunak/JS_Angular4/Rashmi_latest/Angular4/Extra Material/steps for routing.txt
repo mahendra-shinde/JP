@@ -46,3 +46,9 @@ Define the Nav bars and router-outlet
   <br/>
   <router-outlet></router-outlet>
 </div>
+
+
+you can create your own router as a separate module
+using 
+
+ng generate module app-routing

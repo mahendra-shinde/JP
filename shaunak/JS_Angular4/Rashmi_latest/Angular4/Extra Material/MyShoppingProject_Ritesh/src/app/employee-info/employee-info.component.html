@@ -1,0 +1,231 @@
+<!-- <div  *ngFor="let employee of employees">
+    <div >
+      <h3 >{{employee.name}}</h3>
+    </div>
+    <div >
+  
+      <div >
+  
+        <div >
+  
+          <div >
+            <img class="imageClass" [src]="employee.photoPath" />
+          </div>
+          <div >
+  
+            <div >
+              <div class="col-xs-6">
+                Gender
+              </div>
+              <div >
+                : {{employee.gender}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Date of Birth
+              </div>
+              <div >
+                : {{employee.dateOfBirth | date}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Contact Preference
+              </div>
+              <div >
+                : {{employee.contactPreference}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Phone
+              </div>
+              <div >
+                : {{employee.phoneNumber}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Email
+              </div>
+              <div >
+                : {{employee.email}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Department
+              </div>
+              <div >
+                : {{employee.department}}
+              </div>
+            </div>
+            <div >
+              <div >
+                Is Active
+              </div>
+              <div >
+                : {{employee.isActive}}
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+<!--
+<div class="panel panel-primary" *ngFor="let employee of emp">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{employee.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+        <div class="col-xs-4">
+          <img class="imageClass" [src]="employee.photoPath" />
+        </div>
+        <div class="col-xs-8">
+          <div class="row">
+            <div class="col-xs-6">
+              Gender
+            </div>
+            <div class="col-xs-6">
+              : {{employee.gender}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Date of Birth
+            </div>
+            <div class="col-xs-6">
+              : {{employee.dateOfBirth | date}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Contact Preference
+            </div>
+            <div class="col-xs-6">
+              : {{employee.contactPreference}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Phone
+            </div>
+            <div class="col-xs-6">
+              : {{employee.phoneNumber}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Email
+            </div>
+            <div class="col-xs-6">
+              : {{employee.email}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Department
+            </div>
+            <div class="col-xs-6">
+              : {{employee.department}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Is Active
+            </div>
+            <div class="col-xs-6">
+              : {{employee.isActive}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div class="panel panel-primary" *ngFor="let employee of emp">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{employee.name}}</h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="col-xs-10">
+
+      <div class="row vertical-align">
+
+        <div class="col-xs-4">
+          <img class="img-circle imageClass"  [src]="employee.photoPath" />
+        </div>
+        <div class="col-xs-8">
+
+          <div class="row">
+            <div class="col-xs-6 align-left">
+              Gender
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.gender}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 align-left">
+              Date of Birth
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.dateOfBirth | date}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 align-left">
+              Contact Preference
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.contactPreference}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 align-left">
+              Phone
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.phoneNumber}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6  align-left">
+              Email
+            </div>
+            <div class="col-xs-6 align-left">
+              : {{employee.email}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6  align-left">
+              Department
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.department}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6  align-left">
+              Is Active
+            </div>
+            <div class="col-xs-6  align-left">
+              : {{employee.isActive}}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

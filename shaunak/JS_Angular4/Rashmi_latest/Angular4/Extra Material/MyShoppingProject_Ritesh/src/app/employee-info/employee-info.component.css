@@ -1,0 +1,13 @@
+.imageClass{
+    width:200px;
+    height:200px;
+}
+
+.vertical-align{
+    display:flex;
+    align-items:center;
+}
+
+.align-left{
+    text-align:left;
+}
