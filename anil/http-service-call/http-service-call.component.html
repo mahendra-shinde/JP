@@ -1,0 +1,20 @@
+<table>
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>      
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let e of items;">
+          <td>{{e.id}}</td>
+          <td>{{e.title}}</td> <!-- Customized pipe defined in emp.pipe.ts in pipe folder-->
+          <td>{{e.author}}</td> 
+          <!--In built date pipe -->
+      </tr>
+      <tr *ngIf="!items || items.length==0">
+          <td colspan="5"> No records to display</td>
+      </tr>
+  </tbody>
+</table>
