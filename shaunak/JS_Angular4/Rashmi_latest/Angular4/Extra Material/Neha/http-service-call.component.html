@@ -1,0 +1,69 @@
+
+<div class="container">
+    <div class="jumbotron">
+      <form #frm="ngForm" (ngSubmit)="putItems(frm)" *ngIf="!toggleForm" >
+        <h2>Add Item</h2>
+        <div class="form-group">
+          <label for="itemid">
+            ID
+          </label>
+          <input type="text" class="form-control" name="itemid" [(ngModel)]="itemid"/>
+        </div>
+        
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control"name="itemname" [(ngModel)]="itemname"/>  
+        </div>
+        
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="text" class="form-control" name="itemqty" [(ngModel)]="itemqty">
+        </div>
+        
+        
+        <button type="Submit" >Add Items</button>
+      </form>    
+
+      <form #editform="ngForm" (ngSubmit)="editItem(editform)" *ngIf="toggleForm" >
+        <h2>Edit Item</h2>  
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" name="itemname" [(ngModel)]="edit_Item.name"/>  
+        </div>
+          
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="text" class="form-control" name="itemqty" [(ngModel)]="edit_Item.quantity">
+        </div>  
+        <button type="Submit">Save</button>
+        <button (click)="hideEditForm()">Cancel</button>
+      </form> 
+    </div>
+</div>
+<div class="container">
+  <div class="jumbotron">
+    <table border="1px solid black">
+      <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of itemlist;">
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.quantity}}</td>
+            <td><button (click)="showEditForm(i)">Edit</button></td>
+            <td><button (click)="deleteItem(i.id)">Delete</button></td>
+        </tr>
+        <tr *ngIf="!itemlist || itemlist.length==0">
+          <td colspan="5">No Items Found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>  
+  

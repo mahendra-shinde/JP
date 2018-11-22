@@ -1,0 +1,15 @@
+#frm="ngForm" (ngSubmit)="UserFunction(frm)" ngNativeValidate
+
+ngModel required
+ngModel required
+ngModel required
+[disabled]="frm.invalid"
+
+
+saveEmployee(empRefForm:NgForm): void {
+    // var emp:Iemployee;
+    // emp=empRefForm.value;
+     //this.emplist.push(emp);
+     console.log(empRefForm.value);
+
+[disabled]="frm.invalid"

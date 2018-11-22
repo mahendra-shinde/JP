@@ -1,0 +1,9 @@
+step1 create an folder jsonserverdemo
+step2 install npm install -g json-server
+step3 Create a db.json file with some data
+step4 Start JSON Server
+
+json-server --watch db.json
+step5  
+open an http://localhost:3000/posts/1 open the path and call the service
+
