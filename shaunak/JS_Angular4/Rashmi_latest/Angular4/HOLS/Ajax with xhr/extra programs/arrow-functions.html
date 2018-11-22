@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>ES6 - Arrow functions</title>
+	</head>
+	<body>
+		<h1>ES6 - arrow functions</h1>
+		<h3>Press F12 to open Developer tool to see the results</h3>
+	</body>
+	<!-- <script src="./scripts/babel.js"></script> -->
+	<script >
+		(function(){
+			/*arrow function with one statement*/
+			let addNumbers = (firstNumber,secondNumber) => firstNumber + secondNumber;
+			console.log("Addition : "+addNumbers(4,5));
+			
+			/*arrow function with multiple statements*/
+			let factorial = (number) => {
+				let fact = 1;
+				for(let counter=1;counter<=number;counter++){
+					fact = fact * counter;
+				}
+				return fact;
+			}
+			console.log("Factorial : "+factorial(5));
+			
+			var foo = {
+				test : () => console.log(this), //running in window context
+				demo : function() {
+					return () => { //running in function context
+						console.log(this);
+					}
+				}
+			}
+			foo.test(); // returns window object
+			console.log(typeof(foo.test));
+			foo.demo()(); // returns foo object
+		})();
+	</script>
+</html>

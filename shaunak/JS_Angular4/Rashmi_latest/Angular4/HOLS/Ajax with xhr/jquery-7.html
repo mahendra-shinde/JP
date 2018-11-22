@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1"></table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var api = 'https://randomuser.me/api?results=10';
+            $.getJSON(api).then(
+                function (data) {
+                    console.log('success', data);
+                    var results = data['results'];
+                    for (i = 0; i < results.length; i++) {
+                        tag = '<tr>';
+                        tag += '<td><img src="' + results[i].picture.thumbnail + '" /></td>';
+                        tag += '<td>' + results[i].name.first + '</td>';
+                        tag += '<td>' + results[i].name.last + '</td>';
+                        tag += '<td>' + results[i].phone + '</td>';
+                        tag += '</tr>';
+                        $('table').append(tag);
+                    }
+                }
+            ).catch(
+                function (err) {
+                    console.log('error', err);
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>

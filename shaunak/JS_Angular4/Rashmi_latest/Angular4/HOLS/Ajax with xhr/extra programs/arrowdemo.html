@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6 - Arrow functions</title>
+</head>
+
+<body>
+    <h1>ES6 - arrow functions</h1>
+    <h3>Press F12 to open Developer tool to see the results</h3>
+</body>
+<!-- <script src="./scripts/babel.js"></script> -->
+<script>
+    function fn() {
+        console.log('Hello!');
+    }
+    fn();
+    //arraw functions 
+    //rewite the function by arrow operator with paranthesis
+    //the parenthesis stands for agruments if u r not passing any arguments 
+    var fn = () => {
+        console.log('Hello with arrow!');
+    }
+    fn();
+    //you can write the same thing in one line 
+    var fn = () => console.log('Hello with one liner without paranthesis!');
+    fn();
+    //this function is technically same as above 
+    var fn = () => 'Hello!';
+    console.log(fn());
+   //write an function to add 2 numbers with return values
+    //  function fn(a,b)
+    //     {
+    //     return a+b;
+    //   }
+
+    //     var  fn=()=>{
+    //     let a=2;
+    //     let b=2;
+    //     return a+b;
+    // };
+
+    //passing the parameter 
+      var  fn=(a,b)=>{return a+b;};
+      console.log(fn(2,3));
+ 
+      var  fn=(a,b)=> a+b;
+     console.log(fn(12,3)); 
+
+    //if u have only one agrument then we can omit the parenthesis
+    //dont need parenthesis only one argument
+     var  fn=(a)=> a+5;
+     console.log(fn(3));
+
+    var  fn=a=> a+5;
+     console.log(fn(3));
+
+    //arraw functions
+
+    //setTimeout(() => console.log('hello', 9000));
+</script>
+
+</html>

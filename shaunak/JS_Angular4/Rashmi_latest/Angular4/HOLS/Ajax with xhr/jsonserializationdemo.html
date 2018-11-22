@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Object Example: Stringify and Parsing</title>
+  <style>body{font-family:Verdana;}</style>
+</head>
+<body>
+<p>The script first serializes an object and then
+ parses the same string into an appropriate JavaScript Object.</p>
+    <p>This example serializes an object and then parses that string into another object.</p>
+    <script >
+        var phone = {
+                       "name": "iPhone5s",
+                        "specs": [
+                            "Retina Display",
+                            "FingerPrint Scanner",
+                            "Flash Camera",
+                        ],
+                        version: 5,
+                        year: 2013
+                   };
+
+        var jsonString = JSON.stringify(phone);
+        
+        document.write(jsonString);
+        
+        var phoneName = JSON.parse(jsonString);
+        document.write("<br><br>" + phoneName.name);
+    </script>
+</body>
+</html>

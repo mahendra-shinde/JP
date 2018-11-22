@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>ES6 - for..of loop</title>
+	</head>
+	<body>
+		<h1>ES6 - for..of loop</h1>
+		<h3>Press F12 to open Developer tool to see the results</h3>
+	</body>
+	<script>
+	(function(){
+		var departments = ["Training","HR","BPO"];
+		for(var department of departments){
+			console.log(department);
+		}
+		
+		var department = "Training";
+		for(var charInDepartment of department){
+			console.log(charInDepartment);
+		}
+	})();
+	</script>
+</html>

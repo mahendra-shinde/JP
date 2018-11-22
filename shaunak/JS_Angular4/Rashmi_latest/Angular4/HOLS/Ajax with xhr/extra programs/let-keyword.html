@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ES6 - let Keyword</title>
+</head>
+
+<body>
+	<h1>ES6 - let Keyword</h1>
+	<h3>Press F12 to open Developer tool to see the results</h3>
+</body>
+<script>
+	// (function(){
+	// 	let demoVariable = 5;
+	// 	{
+	// 		let demoVariable = 10; //accessible only inside this block 
+	// 		console.log("inside " +demoVariable);	
+	// 		let demoVariable = 9; // throws error
+	// 	}
+	// 	console.log("outside " +demoVariable);
+	// })();
+
+//  var ->Function -Scoped
+//  ES6 -(ES2015) let and const ->block -scoped
+	function start() {
+		for (let   i = 0; i < 5; i++) {
+			console.log(i);
+		}
+		console.log(i);
+
+	}
+	start();
+</script>
+
+</html>
+
+
+
+
+
+
+<!--
+babel.js
+https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.7.7/babel.js 
+-->

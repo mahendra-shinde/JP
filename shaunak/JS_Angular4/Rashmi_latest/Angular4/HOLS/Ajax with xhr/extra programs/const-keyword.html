@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ES6 - constant Keyword</title>
+</head>
+
+<body>
+	<h1>ES6 - constant Keyword</h1>
+	<h3>Press F12 to open Developer tool to see the results</h3>
+</body>
+<script>
+	(function () {
+		const PI = 3.14159265359;
+		//PI  = 2.14159265359; //Throws Type error
+		{
+			const PI = 3.14;
+			console.log("PI Value inside the block: " + PI);
+		}
+		console.log("PI Value outside the block : " + PI);
+
+		// const obj = {
+		// 	name: 'ashish'
+		// }
+		// obj.name = 'deepti';
+		// console.log("Name : " + obj.name);
+		//obj = {}; // Throws Type error
+		const age = 27;
+		//age = 30; //simple constant variable can bot be changed
+		console.log(age);
+
+		//we are changing the values and changing
+		//the pointer of refernce variable
+		const OBJ = {
+			age: 28
+		};
+		console.log(OBJ);
+		OBJ.age = 20;
+
+		console.log(OBJ);
+
+		const OBJ2={
+			age:10
+		}
+		
+		OBJ=OBJ2;
+		console.log(OBJ2);
+		// OBJ={};
+
+		    let a=5;
+		     a=5;
+		console.log(a);
+
+	})();
+</script>
+
+</html>

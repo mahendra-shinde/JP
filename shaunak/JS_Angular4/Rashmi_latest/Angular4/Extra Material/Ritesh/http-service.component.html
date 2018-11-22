@@ -1,0 +1,115 @@
+<div class="container">
+
+  <div class="jumbotron">
+    <form #frm="ngForm" (ngSubmit)="SavePosts(frm)" ngNativeValidate *ngIf="!toggleForm">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add Posts</h3>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id">
+          ID:
+        </label>
+        <input type="text" name="id" [(ngModel)]="defId" #idControl="ngModel" required class="form-control">
+        <div *ngIf="idControl?.touched && idControl?.invalid" class="alert alert-danger">
+          <div *ngIf="idControl.errors?.required">ID is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="title">
+          Title:
+        </label>
+        <input type="text" name="title" [(ngModel)]="defTitle" #titleControl="ngModel" required class="form-control">
+        <div *ngIf="titleControl?.touched && titleControl?.invalid" class="alert alert-danger">
+          <div *ngIf="titleControl.errors?.required">Title is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="author">
+          Author:
+        </label>
+        <input type="text" name="author" [(ngModel)]="defAuthor" #authorControl="ngModel" required class="form-control">
+        <div *ngIf="authorControl?.touched && authorControl?.invalid" class="alert alert-danger">
+          <div *ngIf="authorControl.errors?.required">Email is required</div>
+        </div>
+      </div>
+      <button type="submit" name="button" class="btn btn-success" [disabled]="frm.invalid">Add Post</button>
+    </form>
+
+    <form #editfrm="ngForm" (ngSubmit)="EditPost(editfrm)" ngNativeValidate *ngIf="toggleForm">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Edit Post</h3>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">
+          ID:
+        </label>
+        <input type="text" name="id" [(ngModel)]="selectedPost.id" #idControl="ngModel"
+         required class="form-control">
+        <div *ngIf="idControl?.touched && idControl?.invalid" class="alert alert-danger">
+          <div *ngIf="idControl.errors?.required">ID is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">
+          Title:
+        </label>
+        <input type="text" name="title" [(ngModel)]="selectedPost.title" #titleEditControl="ngModel"
+         required class="form-control">
+        <div *ngIf="titleEditControl?.touched && titleEditControl?.invalid" class="alert alert-danger">
+          <div *ngIf="titleEditControl.errors?.required">Title is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">
+          Author:
+        </label>
+        <input type="text" name="author" [(ngModel)]="selectedPost.author" #authorEditControl="ngModel" required class="form-control">
+        <div *ngIf="authorEditControl?.touched && authorEditControl?.invalid" class="alert alert-danger">
+          <div *ngIf="authorEditControl.errors?.required">Author is required</div>
+        </div>
+      </div>
+      <button type="submit" name="button" class="btn btn-success" [disabled]="editfrm.invalid">Save</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">List of Posts</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table-bordered table-hover">
+      <thead>
+        <tr>
+
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th></th>
+          <th></th>
+          <th></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of posts;">
+
+          <td>{{p.id}}</td>
+          <td>{{p.title }}</td>
+          <td>{{p.author }}</td>
+          <td><button type="button" name="button" class="btn btn-primary" (click)='showEditform(p)' [disabled]='toggleForm'>Edit</button></td>
+          <td><button type="button" name="button" class="btn btn-danger" (click)='deleteItem(p.id)'>Delete</button></td>
+          <td><button type="button" name="button" class="btn" (click)='showAddForm()'>Cancel</button></td>
+        </tr>
+        <tr *ngIf="!posts || posts.length==0">
+          <td colspan="3">No Records to display</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
